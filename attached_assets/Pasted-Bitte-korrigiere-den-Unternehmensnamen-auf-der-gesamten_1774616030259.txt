@@ -1,0 +1,68 @@
+Bitte korrigiere den Unternehmensnamen auf der gesamten Website konsistent.
+
+Wichtige Klarstellung:
+Der Firmenname / Markenname / Außenauftritt lautet:
+B Logistics
+
+Der bisher verwendete Name „Tolga-Baris Coskun Umzüge & Transporte“ soll nicht mehr als sichtbarer Unternehmensname verwendet werden.
+
+Stattdessen gilt:
+
+1. SICHTBARER MARKEN- UND UNTERNEHMENSAUFTRITT
+Überall im Frontend als Unternehmensname verwenden:
+B Logistics
+
+Das betrifft insbesondere:
+- Header
+- Footer
+- Startseite
+- Hero-Bereich
+- Über-uns-Seite
+- Kontaktseite
+- Leistungsseiten
+- FAQ
+- 404-Seite
+- CTA-Texte
+- SEO-Titel
+- Meta-Descriptions
+- Open Graph Angaben
+- strukturierte Unternehmensdaten im Frontend
+
+2. RECHTLICHE ANGABEN
+Sofern rechtlich weiterhin Tolga-Baris Coskun der Inhaber ist, soll das nur in den rechtlich passenden Bereichen erscheinen, zum Beispiel:
+- Impressum
+- Datenschutzerklärung
+- ggf. AGB
+- Kontakt-/Unternehmensdaten, wenn rechtlich erforderlich
+
+Dort bitte sauber trennen zwischen:
+Firmenname: B Logistics
+Inhaber: Tolga-Baris Coskun
+
+Beispielrichtung für Impressum:
+B Logistics
+Inhaber: Tolga-Baris Coskun
+Mittelstraße 11
+40789 Monheim am Rhein
+Telefon: +49 155 60781263
+E-Mail: tolga-baris.coskun@hotmail.de
+
+3. DATENSTRUKTUR ANPASSEN
+Bitte die zentralen Datendateien entsprechend aktualisieren, insbesondere:
+- src/data/company.ts
+- src/data/seo.ts
+- ggf. alle Komponenten, die den alten Namen anzeigen
+
+4. TEXTE ANPASSEN
+Ersetze den bisherigen Namen konsequent in allen Fließtexten, Überschriften und SEO-Daten.
+Die Website soll überall wie der Auftritt von B Logistics wirken.
+
+5. KONSISTENZ PRÜFEN
+Bitte prüfe die gesamte Website auf alte Namensreste wie:
+- Tolga-Baris Coskun Umzüge & Transporte
+- Tolga-Baris Coskun als sichtbarer Markenname
+Diese sollen entfernt oder nur dort verwendet werden, wo es rechtlich nötig ist.
+
+6. LOGO / BRANDING
+Falls das Logo bereits eingebunden ist, soll es ebenfalls klar als B Logistics auftreten.
+Alle Branding-Elemente müssen auf B Logistics abgestimmt sein.

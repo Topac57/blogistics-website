@@ -14,7 +14,7 @@ export function Impressum() {
           <h2>Angaben gemäß § 5 TMG</h2>
           <p>
             {company.name}<br />
-            {company.owner}<br />
+            Inhaber: {company.owner}<br />
             {company.address.street}<br />
             {company.address.city}
           </p>

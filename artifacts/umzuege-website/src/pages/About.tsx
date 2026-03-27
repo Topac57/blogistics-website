@@ -9,7 +9,7 @@ export function About() {
     <>
       <SEOHead 
         title="Über uns | Das Team" 
-        description="Lernen Sie Tolga-Baris Coskun Umzüge & Transporte kennen. Ihr zuverlässiger Partner für Umzüge und Transporte im Raum Düsseldorf und umliegenden Städten."
+        description="Lernen Sie B Logistics kennen. Ihr zuverlässiger Partner für Umzüge und Transporte im Raum Düsseldorf und umliegenden Städten."
         path="/ueber-uns"
       />
 

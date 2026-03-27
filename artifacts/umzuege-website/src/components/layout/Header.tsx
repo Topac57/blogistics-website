@@ -44,14 +44,14 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-lg flex items-center justify-center overflow-hidden shrink-0 transition-transform group-hover:scale-105">
-              <img src={logo} alt="Tolga-Baris Coskun Umzüge & Transporte" className="w-full h-full object-contain p-1" />
+              <img src={logo} alt="B Logistics" className="w-full h-full object-contain p-1" />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-white font-display font-bold text-lg md:text-xl leading-tight">
-                Tolga-Baris Coskun
+                {company.name}
               </h1>
               <p className="text-primary text-xs md:text-sm font-semibold tracking-wide uppercase">
-                Umzüge & Transporte
+                {company.tagline}
               </p>
             </div>
           </Link>
