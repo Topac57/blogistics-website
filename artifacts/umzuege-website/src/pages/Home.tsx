@@ -17,16 +17,14 @@ export function Home() {
       />
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-zinc-950">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800 via-zinc-950 to-black"></div>
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-        
         <img 
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" 
-          alt="Umzugskartons" 
-          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-luminosity"
+          src="/hero-duesseldorf.png" 
+          alt="Düsseldorf Skyline" 
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-zinc-950/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-zinc-950/20"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 text-center md:text-left">
           <motion.div 
