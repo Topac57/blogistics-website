@@ -3,6 +3,8 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Phone, Menu, X, ChevronRight } from 'lucide-react';
 import { company } from '@/data/company';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '@/assets/logo.png';
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -42,7 +44,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-lg flex items-center justify-center overflow-hidden shrink-0 transition-transform group-hover:scale-105">
-              <img src="/logo.png" alt="Tolga-Baris Coskun Umzüge & Transporte Logo" className="w-full h-full object-contain p-1" />
+              <img src={logo} alt="Tolga-Baris Coskun Umzüge & Transporte" className="w-full h-full object-contain p-1" />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-white font-display font-bold text-lg md:text-xl leading-tight">

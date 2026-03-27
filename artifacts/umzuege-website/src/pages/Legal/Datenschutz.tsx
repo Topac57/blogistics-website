@@ -1,10 +1,11 @@
 import { SEOHead } from '@/components/SEOHead';
 import { company } from '@/data/company';
+import { seoData } from '@/data/seo';
 
 export function Datenschutz() {
   return (
     <>
-      <SEOHead title="Datenschutzerklärung" description="Datenschutzerklärung der Firma Tolga-Baris Coskun Umzüge & Transporte." />
+      <SEOHead title={seoData.pages.datenschutz.title} description={seoData.pages.datenschutz.description} path={seoData.pages.datenschutz.path} />
       
       <section className="py-24 bg-white min-h-[70vh]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-zinc prose-headings:font-display">

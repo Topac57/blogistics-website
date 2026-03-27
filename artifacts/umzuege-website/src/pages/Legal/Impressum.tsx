@@ -1,10 +1,11 @@
 import { SEOHead } from '@/components/SEOHead';
 import { company } from '@/data/company';
+import { seoData } from '@/data/seo';
 
 export function Impressum() {
   return (
     <>
-      <SEOHead title="Impressum" description="Impressum der Firma Tolga-Baris Coskun Umzüge & Transporte." />
+      <SEOHead title={seoData.pages.impressum.title} description={seoData.pages.impressum.description} path={seoData.pages.impressum.path} />
       
       <section className="py-24 bg-white min-h-[70vh]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-zinc prose-headings:font-display">
@@ -24,17 +25,12 @@ export function Impressum() {
             E-Mail: {company.email}
           </p>
 
-          <h2>Umsatzsteuer-ID</h2>
-          <p>
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            [Steuernummer / USt-IdNr. - bei Bedarf einfügen]
-          </p>
+          {/* Hinweis: USt-IdNr. ggf. nach Registrierung eintragen */}
 
-          <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+          <h2>Berufsbezeichnung</h2>
           <p>
             Berufsbezeichnung: Transport- und Umzugsunternehmen<br />
-            Zuständige Kammer: [Ggf. IHK eintragen]<br />
-            Verliehen in: {company.address.country}
+            Zuständiges Land: {company.address.country}
           </p>
 
           <h2>EU-Streitschlichtung</h2>

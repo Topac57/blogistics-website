@@ -9,7 +9,7 @@ const formSchema = z.object({
   phone: z.string().min(6, "Bitte geben Sie eine gültige Telefonnummer ein."),
   email: z.string().email("Bitte geben Sie eine gültige E-Mail-Adresse ein."),
   service: z.string().min(1, "Bitte wählen Sie eine Leistung aus."),
-  date: z.string().optional(),
+  date: z.string().min(1, "Bitte geben Sie einen Wunschtermin an."),
   message: z.string().min(10, "Ihre Nachricht sollte mindestens 10 Zeichen lang sein."),
   privacy: z.boolean().refine((val) => val === true, "Bitte stimmen Sie der Datenschutzerklärung zu.")
 });
@@ -121,13 +121,14 @@ export function ContactForm() {
 
       {/* Date */}
       <div className="space-y-2">
-        <label htmlFor="date" className="text-sm font-semibold text-zinc-700">Wunschtermin (optional)</label>
+        <label htmlFor="date" className="text-sm font-semibold text-zinc-700">Wunschtermin *</label>
         <input
           id="date"
           type="date"
           {...register("date")}
-          className="w-full px-4 py-3 rounded-xl bg-zinc-50 border border-zinc-200 focus:border-primary focus:ring-primary/20 focus:outline-none focus:ring-4 transition-all text-zinc-700"
+          className={`w-full px-4 py-3 rounded-xl bg-zinc-50 border ${errors.date ? 'border-red-500 focus:ring-red-200' : 'border-zinc-200 focus:border-primary focus:ring-primary/20'} focus:outline-none focus:ring-4 transition-all text-zinc-700`}
         />
+        {errors.date && <p className="text-red-500 text-xs font-medium">{errors.date.message}</p>}
       </div>
 
       {/* Message */}

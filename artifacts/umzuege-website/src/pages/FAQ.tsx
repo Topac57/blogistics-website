@@ -5,6 +5,7 @@ import { Plus, Minus } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { faqs } from '@/data/faq';
 import { company } from '@/data/company';
+import { seoData } from '@/data/seo';
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -16,9 +17,9 @@ export function FAQ() {
   return (
     <>
       <SEOHead 
-        title="Häufige Fragen (FAQ)" 
-        description="Antworten auf die wichtigsten Fragen zu Umzug, Entrümpelung, Transport und Kosten bei Tolga-Baris Coskun in Monheim."
-        path="/faq"
+        title={seoData.pages.faq.title}
+        description={seoData.pages.faq.description}
+        path={seoData.pages.faq.path}
       />
 
       <section className="bg-zinc-950 py-20 relative overflow-hidden">

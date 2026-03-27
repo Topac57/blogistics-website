@@ -1,15 +1,16 @@
 import { SEOHead } from '@/components/SEOHead';
 import { company } from '@/data/company';
+import { seoData } from '@/data/seo';
 
 export function AGB() {
   return (
     <>
-      <SEOHead title="Allgemeine Geschäftsbedingungen" description="AGB der Firma Tolga-Baris Coskun Umzüge & Transporte." />
+      <SEOHead title={seoData.pages.agb.title} description={seoData.pages.agb.description} path={seoData.pages.agb.path} />
       
       <section className="py-24 bg-white min-h-[70vh]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-zinc prose-headings:font-display">
           <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
-          <p>Stand: [Aktuelles Datum]</p>
+          <p>Stand: März 2026</p>
 
           <h2>1. Geltungsbereich</h2>
           <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge über Umzugs-, Entrümpelungs- und Transportleistungen sowie damit verbundene Nebenleistungen, die zwischen {company.name}, {company.address.street}, {company.address.city} (nachfolgend "Auftragnehmer") und dem Kunden (nachfolgend "Auftraggeber") geschlossen werden.</p>

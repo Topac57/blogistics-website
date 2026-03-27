@@ -1,26 +1,26 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, ShieldCheck, Clock, ThumbsUp, MapPin } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ShieldCheck, Clock, ThumbsUp, MapPin, Users, Star } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { ContactForm } from '@/components/ContactForm';
 import { services } from '@/data/services';
 import { company } from '@/data/company';
+import { seoData } from '@/data/seo';
 
 export function Home() {
   return (
     <>
       <SEOHead 
-        title="Umzüge & Transporte in Monheim" 
-        description="Zuverlässige Umzüge, Entrümpelungen & Transporte in Monheim am Rhein. Professionell, pünktlich und zu fairen Preisen. Jetzt anfragen!"
+        title={seoData.pages.home.title}
+        description={seoData.pages.home.description}
+        path={seoData.pages.home.path}
       />
 
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-zinc-950">
-        {/* Abstract background elements instead of Unsplash since it's cleaner */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800 via-zinc-950 to-black"></div>
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
         
-        {/* hero moving boxes dark premium */}
         <img 
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" 
           alt="Umzugskartons" 
@@ -144,10 +144,12 @@ export function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { icon: ShieldCheck, title: "Zuverlässig", desc: "Wir halten unsere Versprechen." },
-                  { icon: Clock, title: "Pünktlich", desc: "Auf uns können Sie warten." },
-                  { icon: ThumbsUp, title: "Faire Preise", desc: "Keine versteckten Kosten." },
-                  { icon: CheckCircle2, title: "Sorgfältig", desc: "Wir achten auf Ihr Eigentum." }
+                  { icon: ShieldCheck, title: "Zuverlässig", desc: "Wir halten unsere Zusagen immer ein." },
+                  { icon: Clock, title: "Pünktlich", desc: "Ihre Zeit ist uns wichtig – kein langes Warten." },
+                  { icon: ThumbsUp, title: "Faire Preise", desc: "Transparente Festpreise, keine versteckten Kosten." },
+                  { icon: CheckCircle2, title: "Sorgfältig", desc: "Wir behandeln Ihr Eigentum wie unser eigenes." },
+                  { icon: Users, title: "Erfahrenes Team", desc: "Eingespieltes Personal für reibungslose Abläufe." },
+                  { icon: Star, title: "Regional & Persönlich", desc: "Ihr Ansprechpartner aus Monheim am Rhein." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center shrink-0">
@@ -168,7 +170,6 @@ export function Home() {
               viewport={{ once: true }}
               className="relative"
             >
-              {/* moving truck professional team */}
               <img 
                 src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=800&q=80" 
                 alt="Unser Team im Einsatz" 
@@ -209,6 +210,34 @@ export function Home() {
                 <p className="text-zinc-400 text-sm leading-relaxed">{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ TEASER */}
+      <section className="py-20 bg-zinc-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Häufig gestellte Fragen</h2>
+            <div className="w-24 h-1.5 bg-primary mx-auto rounded-full mb-6"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+            {[
+              { q: "Wie viel kostet ein Umzug?", a: "Die Kosten hängen von Umfang, Entfernung und Leistungspaket ab. Wir erstellen Ihnen gerne ein kostenloses Festpreisangebot." },
+              { q: "Wie weit im Voraus muss ich buchen?", a: "Wir empfehlen 2–4 Wochen Vorlauf. In Einzelfällen sind wir auch kurzfristig verfügbar – sprechen Sie uns an." },
+              { q: "Erledigen Sie auch Entrümpelungen?", a: "Ja, wir entrümpeln Wohnungen, Häuser, Keller und Dachböden fachgerecht und umweltgerecht in Monheim und Umgebung." },
+              { q: "Sind meine Möbel während des Transports versichert?", a: "Wir arbeiten mit größter Sorgfalt. Auf Wunsch klären wir Sie über Haftungsregelungen und Versicherungsmöglichkeiten auf." },
+            ].map((faq, i) => (
+              <div key={i} className="bg-white rounded-xl p-6 border border-zinc-100 shadow-sm">
+                <h3 className="font-bold text-zinc-900 mb-2">{faq.q}</h3>
+                <p className="text-zinc-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link to="/faq" className="inline-flex items-center gap-2 text-primary font-bold hover:underline text-lg">
+              Alle Fragen ansehen <ArrowRight className="w-5 h-5" />
+            </Link>
           </div>
         </div>
       </section>

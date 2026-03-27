@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 import { company } from '@/data/company';
+import logo from '@/assets/logo.png';
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -13,7 +15,7 @@ export function Footer() {
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-3">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center overflow-hidden shrink-0">
-                <img src="/logo.png" alt="Tolga-Baris Coskun Umzüge & Transporte Logo" className="w-full h-full object-contain p-1" />
+                <img src={logo} alt="Tolga-Baris Coskun Umzüge & Transporte" className="w-full h-full object-contain p-1" />
               </div>
               <div>
                 <h2 className="text-white font-display font-bold text-lg leading-tight">
@@ -87,6 +89,8 @@ export function Footer() {
               Informationen
             </h3>
             <ul className="space-y-3 text-sm">
+              <li><Link to="/" className="hover:text-primary transition-colors">Startseite</Link></li>
+              <li><Link to="/leistungen" className="hover:text-primary transition-colors">Leistungen</Link></li>
               <li><Link to="/ueber-uns" className="hover:text-primary transition-colors">Über uns</Link></li>
               <li><Link to="/faq" className="hover:text-primary transition-colors">Häufige Fragen (FAQ)</Link></li>
               <li><Link to="/kontakt" className="hover:text-primary transition-colors">Kontakt</Link></li>
