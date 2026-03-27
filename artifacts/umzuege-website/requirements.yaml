@@ -1,0 +1,14 @@
+packages:
+  "react-router-dom": "Routing requested in implementation notes"
+  "react-helmet-async": "SEO and head tag management"
+  "framer-motion": "Stunning animations and page transitions"
+  "lucide-react": "Beautiful icons for UI"
+  "react-hook-form": "Form state management"
+  "@hookform/resolvers": "Zod validation for forms"
+  "zod": "Schema validation"
+  "clsx": "Utility for constructing className strings"
+  "tailwind-merge": "Utility for merging tailwind classes"
+
+notes:
+  - "The app uses react-router-dom as explicitly requested, replacing Wouter."
+  - "Using framer-motion for premium feeling transitions."

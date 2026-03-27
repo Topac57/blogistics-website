@@ -48,6 +48,33 @@ Every package extends `tsconfig.base.json` which sets `composite: true`. The roo
 - `pnpm run build` — runs `typecheck` first, then recursively runs `build` in all packages that define it
 - `pnpm run typecheck` — runs `tsc --build --emitDeclarationOnly` using project references
 
+## Artifacts
+
+### `artifacts/umzuege-website` (`@workspace/umzuege-website`)
+
+Professional German-language business website for **Tolga-Baris Coskun Umzüge & Transporte**.
+
+- **Type**: React + Vite (frontend-only, no API dependency)
+- **Preview path**: `/` (root)
+- **Design**: Black/Yellow (#FFC107)/White premium scheme, mobile-first
+- **Framework**: React 18, react-router-dom (BrowserRouter), framer-motion, react-helmet-async, Tailwind CSS v4, lucide-react
+- **Pages (14 routes)**:
+  - `/` — Homepage with hero, services overview, USPs, CTA
+  - `/leistungen` — Services overview page (6 cards)
+  - `/leistungen/:slug` — Service detail pages (umzuege, entruempelung, transporte, moebelmontage, haushaltsaufloesung)
+  - `/kontakt` — Contact page with 7-field form (frontend-only, simulated submission)
+  - `/faq` — FAQ accordion page
+  - `/ueber-uns` — About us page
+  - `/impressum`, `/datenschutz`, `/agb` — Legal pages
+  - `*` → 404 page
+- **Company data**: `src/data/company.ts` (name, address, phone, email, hours)
+- **Services data**: `src/data/services.ts` (slug, icon, descriptions, details, benefits)
+- **Logo**: `public/logo.png` (served at `/logo.png`)
+- **Contact form fields**: Name*, Telefonnummer*, E-Mail*, Gewünschte Leistung (dropdown)*, Wunschtermin (date), Nachricht*, DSGVO checkbox*
+- **SEO**: `SEOHead` component wraps `react-helmet-async` HelmetProvider, per-page title/description meta
+
+---
+
 ## Packages
 
 ### `artifacts/api-server` (`@workspace/api-server`)
