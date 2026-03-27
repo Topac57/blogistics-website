@@ -9,7 +9,7 @@ export function Services() {
     <>
       <SEOHead 
         title="Unsere Leistungen | Umzüge, Entrümpelung, Transport" 
-        description="Alle Leistungen im Überblick: Privatumzüge, Firmenumzüge, Entrümpelungen, Transporte, Möbelmontage und Haushaltsauflösungen in Monheim am Rhein."
+        description="Alle Leistungen im Überblick: Privatumzüge, Firmenumzüge, Entrümpelungen, Transporte, Möbelmontage und Haushaltsauflösungen in Düsseldorf und Umgebung."
         path="/leistungen"
       />
 

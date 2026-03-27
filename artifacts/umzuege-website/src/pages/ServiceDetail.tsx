@@ -19,7 +19,7 @@ export function ServiceDetail() {
   return (
     <>
       <SEOHead 
-        title={`${service.title} in Monheim am Rhein`} 
+        title={`${service.title} in Düsseldorf und Umgebung`} 
         description={service.shortDescription}
         path={`/leistungen/${service.slug}`}
       />

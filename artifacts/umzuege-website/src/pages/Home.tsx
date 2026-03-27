@@ -133,7 +133,7 @@ export function Home() {
                 </h2>
                 <div className="w-20 h-1.5 bg-primary rounded-full mb-6"></div>
                 <p className="text-lg text-zinc-600 leading-relaxed">
-                  Ein Umzug oder eine Haushaltsauflösung ist Vertrauenssache. Als lokales Unternehmen aus Monheim am Rhein legen wir größten Wert auf Zuverlässigkeit, Diskretion und erstklassigen Service.
+                  Ein Umzug oder eine Haushaltsauflösung ist Vertrauenssache. Als Ihr persönlicher Partner im Raum Düsseldorf legen wir größten Wert auf Zuverlässigkeit, Diskretion und erstklassigen Service.
                 </p>
               </div>
 
@@ -144,7 +144,7 @@ export function Home() {
                   { icon: ThumbsUp, title: "Faire Preise", desc: "Transparente Festpreise, keine versteckten Kosten." },
                   { icon: CheckCircle2, title: "Sorgfältig", desc: "Wir behandeln Ihr Eigentum wie unser eigenes." },
                   { icon: Users, title: "Erfahrenes Team", desc: "Eingespieltes Personal für reibungslose Abläufe." },
-                  { icon: Star, title: "Regional & Persönlich", desc: "Ihr Ansprechpartner aus Monheim am Rhein." },
+                  { icon: Star, title: "Regional & Persönlich", desc: "Ihr Ansprechpartner für Düsseldorf und Umgebung." },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center shrink-0">
@@ -218,7 +218,7 @@ export function Home() {
             {[
               { q: "Wie viel kostet ein Umzug?", a: "Die Kosten hängen von Umfang, Entfernung und Leistungspaket ab. Wir erstellen Ihnen gerne ein kostenloses Festpreisangebot." },
               { q: "Wie weit im Voraus muss ich buchen?", a: "Wir empfehlen 2–4 Wochen Vorlauf. In Einzelfällen sind wir auch kurzfristig verfügbar – sprechen Sie uns an." },
-              { q: "Erledigen Sie auch Entrümpelungen?", a: "Ja, wir entrümpeln Wohnungen, Häuser, Keller und Dachböden fachgerecht und umweltgerecht in Monheim und Umgebung." },
+              { q: "Erledigen Sie auch Entrümpelungen?", a: "Ja, wir entrümpeln Wohnungen, Häuser, Keller und Dachböden fachgerecht und umweltgerecht im Raum Düsseldorf und den umliegenden Städten." },
               { q: "Sind meine Möbel während des Transports versichert?", a: "Wir arbeiten mit größter Sorgfalt. Auf Wunsch klären wir Sie über Haftungsregelungen und Versicherungsmöglichkeiten auf." },
             ].map((faq, i) => (
               <div key={i} className="bg-white rounded-xl p-6 border border-zinc-100 shadow-sm">
@@ -255,9 +255,9 @@ export function Home() {
               <MapPin className="w-10 h-10 text-primary" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-zinc-900 mb-3">Ihr lokaler Partner aus Monheim am Rhein</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-3">Ihr Partner für Düsseldorf und Umgebung</h3>
               <p className="text-zinc-600 text-lg leading-relaxed mb-4">
-                Wir sind tief in der Region verwurzelt und kennen die Gegebenheiten in Monheim, Langenfeld, Leverkusen und Düsseldorf genau. Kurze Anfahrtswege, schnelle Erreichbarkeit und persönliche Betreuung zeichnen uns aus. Vertrauen Sie auf einen Dienstleister aus Ihrer Nachbarschaft!
+                Wir kennen die Gegebenheiten im Raum Düsseldorf genau – von der Innenstadt bis in die umliegenden Städte wie Ratingen, Mettmann, Neuss, Monheim am Rhein und Leverkusen. Kurze Reaktionszeiten, persönliche Betreuung und faire Preise machen uns zu Ihrem idealen Dienstleister in der Region.
               </p>
               <Link to="/ueber-uns" className="text-primary font-bold hover:underline inline-flex items-center">
                 Mehr über uns erfahren <ArrowRight className="w-4 h-4 ml-1" />

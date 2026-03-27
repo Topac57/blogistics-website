@@ -9,7 +9,7 @@ export function About() {
     <>
       <SEOHead 
         title="Über uns | Das Team" 
-        description="Lernen Sie Tolga-Baris Coskun Umzüge & Transporte kennen. Ihr lokaler Partner in Monheim am Rhein für zuverlässige Dienstleistungen."
+        description="Lernen Sie Tolga-Baris Coskun Umzüge & Transporte kennen. Ihr zuverlässiger Partner für Umzüge und Transporte im Raum Düsseldorf und umliegenden Städten."
         path="/ueber-uns"
       />
 
@@ -21,7 +21,7 @@ export function About() {
               Über <span className="text-primary">uns</span>
             </h1>
             <p className="text-xl text-zinc-300 max-w-2xl mx-auto">
-              Ihr verlässlicher Partner aus der Nachbarschaft. Lernen Sie das Team hinter den Kulissen kennen.
+              Ihr verlässlicher Partner für Düsseldorf und die gesamte Region. Lernen Sie das Team hinter den Kulissen kennen.
             </p>
           </motion.div>
         </div>
@@ -34,7 +34,7 @@ export function About() {
               <h2 className="text-3xl font-bold text-zinc-900 mb-6">Wer wir sind</h2>
               <div className="space-y-6 text-lg text-zinc-600 leading-relaxed">
                 <p>
-                  Hinter <strong>{company.name}</strong> steht ein motiviertes und erfahrenes Team, das sich auf Dienstleistungen rund um Haus und Wohnung spezialisiert hat. Gegründet und geführt von {company.owner}, sind wir stolz darauf, ein echtes lokales Unternehmen aus Monheim am Rhein zu sein.
+                  Hinter <strong>{company.name}</strong> steht ein motiviertes und erfahrenes Team, das sich auf Dienstleistungen rund um Haus und Wohnung spezialisiert hat. Gegründet und geführt von {company.owner}, sind wir mit unserer Geschäftsadresse in Monheim am Rhein der zuverlässige Dienstleister für Düsseldorf und die gesamte umliegende Region.
                 </p>
                 <p>
                   Wir wissen: Ein Umzug, eine Entrümpelung oder der Transport wertvoller Möbel ist immer Vertrauenssache. Deshalb legen wir größten Wert auf eine persönliche Betreuung, absolute Zuverlässigkeit und transparente Kommunikation vom ersten Kontakt bis zum Abschluss der Arbeiten.
@@ -63,9 +63,9 @@ export function About() {
               <div className="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-zinc-900 mb-3">Lokal verwurzelt</h3>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Für Düsseldorf und Umgebung</h3>
               <p className="text-zinc-600">
-                Als Monheimer Unternehmen sind wir schnell vor Ort – auch in Langenfeld, Leverkusen, Düsseldorf und Umgebung.
+                Unser Einsatzgebiet umfasst Düsseldorf und die umliegenden Städte – von Ratingen über Neuss bis Leverkusen und darüber hinaus.
               </p>
             </div>
             

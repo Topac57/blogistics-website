@@ -5,7 +5,7 @@ export const faqs = [
   },
   {
     question: "In welchem Gebiet sind Sie tätig?",
-    answer: "Unser Hauptsitz ist in Monheim am Rhein. Wir führen Umzüge, Entrümpelungen und Transporte primär in Monheim, Langenfeld, Baumberg, Düsseldorf, Köln, Leverkusen und der gesamten umliegenden Rheinland-Region durch. Überregionale Transporte sind auf Anfrage ebenfalls möglich."
+    answer: "Unser Schwerpunkt liegt im Raum Düsseldorf und den umliegenden Städten – darunter Ratingen, Neuss, Mettmann, Langenfeld, Leverkusen und weitere Orte im Rheinland. Unsere Geschäftsadresse befindet sich in Monheim am Rhein. Überregionale Transporte sind auf Anfrage ebenfalls möglich."
   },
   {
     question: "Sind auch kurzfristige Termine möglich?",

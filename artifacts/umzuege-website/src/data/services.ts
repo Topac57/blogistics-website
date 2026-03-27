@@ -21,7 +21,7 @@ export const services: Service[] = [
     icon: Truck,
     slug: "umzuege",
     hasDetailPage: true,
-    introText: "Ein Umzug bedeutet oft Stress und viel Organisation. Mit uns als Ihrem zuverlässigen Partner in Monheim am Rhein und Umgebung können Sie sich entspannt zurücklehnen. Wir kümmern uns um alles – von der ersten Kiste bis zum Aufbau am neuen Wohnort.",
+    introText: "Ein Umzug bedeutet oft Stress und viel Organisation. Mit uns als Ihrem zuverlässigen Partner im Raum Düsseldorf können Sie sich entspannt zurücklehnen. Wir kümmern uns um alles – von der ersten Kiste bis zum Aufbau am neuen Wohnort.",
     details: [
       "Privatumzüge (Singles, Paare, Familien)",
       "Seniorenumzüge mit besonderer Sorgfalt",

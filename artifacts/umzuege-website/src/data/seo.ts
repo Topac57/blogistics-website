@@ -1,38 +1,38 @@
 export const seoData = {
   siteName: "Tolga-Baris Coskun Umzüge & Transporte",
   siteUrl: "https://umzuege-coskun.de",
-  defaultTitle: "Umzüge & Transporte Monheim am Rhein | Tolga-Baris Coskun",
+  defaultTitle: "Umzüge & Transporte Düsseldorf | Tolga-Baris Coskun",
   defaultDescription:
-    "Zuverlässige Umzüge, Entrümpelungen & Transporte in Monheim am Rhein. Professionell, pünktlich und zu fairen Preisen. Jetzt kostenlos anfragen!",
+    "Zuverlässige Umzüge, Entrümpelungen & Transporte in Düsseldorf und Umgebung. Professionell, pünktlich und zu fairen Preisen. Jetzt kostenlos anfragen!",
   pages: {
     home: {
-      title: "Umzüge & Transporte in Monheim am Rhein",
+      title: "Umzüge & Transporte in Düsseldorf und Umgebung",
       description:
-        "Zuverlässige Umzüge, Entrümpelungen & Transporte in Monheim am Rhein. Professionell, pünktlich und zu fairen Preisen. Jetzt anfragen!",
+        "Zuverlässige Umzüge, Entrümpelungen & Transporte in Düsseldorf und Umgebung. Professionell, pünktlich und zu fairen Preisen. Jetzt anfragen!",
       path: "/",
     },
     leistungen: {
-      title: "Unsere Leistungen – Umzug, Transport & Entrümpelung",
+      title: "Unsere Leistungen – Umzug, Transport & Entrümpelung in Düsseldorf",
       description:
-        "Vom Umzug über Entrümpelung bis zur Möbelmontage – entdecken Sie alle Leistungen von Tolga-Baris Coskun Umzüge & Transporte in Monheim.",
+        "Vom Umzug über Entrümpelung bis zur Möbelmontage – alle Leistungen von Tolga-Baris Coskun Umzüge & Transporte für Düsseldorf und die umliegenden Städte.",
       path: "/leistungen",
     },
     kontakt: {
-      title: "Kontakt & kostenlose Anfrage",
+      title: "Kontakt & kostenlose Anfrage | Düsseldorf und Umgebung",
       description:
-        "Nehmen Sie jetzt Kontakt auf! Kostenlose und unverbindliche Angebote für Umzug, Transport und Entrümpelung in Monheim am Rhein.",
+        "Nehmen Sie jetzt Kontakt auf! Kostenlose und unverbindliche Angebote für Umzug, Transport und Entrümpelung in Düsseldorf und Umgebung.",
       path: "/kontakt",
     },
     faq: {
-      title: "Häufige Fragen (FAQ) zu Umzug & Entrümpelung",
+      title: "Häufige Fragen (FAQ) zu Umzug & Entrümpelung in Düsseldorf",
       description:
-        "Antworten auf die wichtigsten Fragen zu Umzug, Entrümpelung, Transport und Kosten bei Tolga-Baris Coskun in Monheim.",
+        "Antworten auf die wichtigsten Fragen zu Umzug, Entrümpelung, Transport und Kosten – Ihr Partner im Raum Düsseldorf.",
       path: "/faq",
     },
     ueberUns: {
-      title: "Über uns – Ihr lokaler Umzugsspezialist in Monheim",
+      title: "Über uns – Ihr Umzugsspezialist für Düsseldorf und Umgebung",
       description:
-        "Lernen Sie das Team von Tolga-Baris Coskun Umzüge & Transporte kennen. Lokal verwurzelt, zuverlässig und erfahren in Monheim am Rhein.",
+        "Lernen Sie Tolga-Baris Coskun Umzüge & Transporte kennen. Geschäftsadresse in Monheim am Rhein, Einsatzgebiet im Raum Düsseldorf und umliegenden Städten.",
       path: "/ueber-uns",
     },
     impressum: {

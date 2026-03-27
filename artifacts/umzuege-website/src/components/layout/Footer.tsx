@@ -28,7 +28,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Ihr zuverlässiger Partner für stressfreie Umzüge, Transporte und fachgerechte Entrümpelungen in Monheim am Rhein und der gesamten Region.
+              Ihr zuverlässiger Partner für stressfreie Umzüge, Transporte und fachgerechte Entrümpelungen in Düsseldorf und den umliegenden Städten.
             </p>
           </div>
 

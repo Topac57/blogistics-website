@@ -9,7 +9,7 @@ export function Contact() {
     <>
       <SEOHead 
         title="Kontakt & Anfrage" 
-        description="Nehmen Sie Kontakt zu Tolga-Baris Coskun Umzüge & Transporte in Monheim auf. Kostenlose Besichtigung und unverbindliches Angebot."
+        description="Nehmen Sie Kontakt auf! Kostenlose Besichtigung und unverbindliches Angebot für Umzüge und Transporte in Düsseldorf und Umgebung."
         path="/kontakt"
       />
 
