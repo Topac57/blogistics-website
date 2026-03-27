@@ -20,11 +20,11 @@ export function Home() {
         <img 
           src="/hero-duesseldorf.png" 
           alt="Düsseldorf Skyline" 
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-65"
         />
 
-        <div className="absolute inset-0 bg-zinc-950/50"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-zinc-950/20"></div>
+        <div className="absolute inset-0 bg-zinc-950/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-zinc-950/5"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 text-center md:text-left">
           <motion.div 
