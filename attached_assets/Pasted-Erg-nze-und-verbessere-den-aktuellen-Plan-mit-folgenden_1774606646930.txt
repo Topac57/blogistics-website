@@ -1,0 +1,65 @@
+Ergänze und verbessere den aktuellen Plan mit folgenden Qualitätsanforderungen und setze diese bei der Umsetzung konsequent um:
+
+1. Inhalte und Unternehmensdaten zentral auslagern
+- Lege strukturierte Datendateien an, z. B.:
+  - src/data/company.ts
+  - src/data/services.ts
+  - src/data/faq.ts
+  - src/data/seo.ts
+- Telefonnummer, E-Mail, Adresse, Firmenname, Leistungsdaten und FAQ-Inhalte sollen nicht hart in vielen Komponenten verstreut sein.
+
+2. SEO sauber umsetzen
+- Nutze eine saubere SEO-Lösung für React, z. B. react-helmet-async
+- Jede Seite braucht:
+  - individuellen title
+  - meta description
+  - Open Graph title
+  - Open Graph description
+  - sinnvolle H1
+- Lokaler Fokus auf Monheim am Rhein und Umgebung
+
+3. Kontaktformular hochwertig umsetzen
+- Frontend-Validierung mit klaren Fehlermeldungen
+- Pflichtfelder klar kennzeichnen
+- DSGVO-Checkbox muss verpflichtend sein
+- Erfolgsmeldung nach Submit simulieren
+- Code so strukturieren, dass später Formspree, EmailJS oder ein Backend leicht angeschlossen werden kann
+
+4. Conversion-Optimierung verstärken
+- Auf jeder wichtigen Seite klare CTA-Bereiche integrieren
+- Telefonnummer im Header permanent sichtbar
+- Kontaktmöglichkeiten mehrfach auf der Website platzieren
+- Buttons klar und handlungsorientiert beschriften
+
+5. Bilder und visuelle Elemente
+- Verwende professionelle Icons für Leistungen
+- Bildbereiche so anlegen, dass später echte Fotos leicht austauschbar sind
+- Keine überladenen oder unpassenden Stock-Layouts
+- Falls keine echten Bilder vorhanden sind, hochwertige neutrale Platzhalterbereiche nutzen
+
+6. Performance und Accessibility
+- Mobile-first
+- semantisches HTML
+- gute Kontraste
+- Labels für Formulare
+- Tastaturbedienbarkeit für Navigation und FAQ
+- Bilder und Assets optimieren
+- schnelle Ladezeiten beachten
+
+7. Codequalität
+- keine Platzhalterseiten
+- keine generischen Lorem-Ipsum-Texte
+- keine duplizierten Layouts ohne Wiederverwendung
+- saubere Komponentenarchitektur
+- wartbarer, gut strukturierter Code
+
+8. Rechtliches
+- Impressum, Datenschutz und AGB vollständig integrieren
+- Hinweise zur rechtlichen Prüfung nur intern im Code kommentieren, nicht störend im sichtbaren Frontend darstellen
+- IBAN, BIC und Steuernummer nicht öffentlich prominent anzeigen
+
+9. Ausgabequalität
+- Das Ergebnis soll wie eine echte hochwertige Firmenwebsite wirken
+- Alle Seiten vollständig ausarbeiten
+- Keine halbfertigen Sektionen
+- Inhalte glaubwürdig, lokal und professionell formulieren

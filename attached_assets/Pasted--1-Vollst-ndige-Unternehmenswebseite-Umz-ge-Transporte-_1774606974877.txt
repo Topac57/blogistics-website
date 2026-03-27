@@ -1,0 +1,147 @@
+#1 - Vollständige Unternehmenswebseite Umzüge & Transporte
+
+What & Why
+Erstelle eine vollständige, produktionsnahe React+Vite Webseite für "Tolga-Baris Coskun Umzüge & Transporte" aus Monheim am Rhein. Ziel: Neukundengewinnung, Vertrauen aufbauen, professioneller lokaler Marktauftritt.
+
+Unternehmensdaten (zentral in src/data/company.ts):
+Name: Tolga-Baris Coskun Umzüge & Transporte
+Adresse: Mittelstraße 11, 40789 Monheim am Rhein
+Telefon: +49 155 60781263
+E-Mail: tolga-baris.coskun@hotmail.de
+
+Done looks like
+- React+Vite Artifact unter previewPath "/" läuft und ist vollständig bedienbar
+- Alle Seiten vollständig ausgebaut — kein Platzhalterinhalt, kein Lorem Ipsum, keine halbfertigen Bereiche, keine leeren Bildflächen ohne Struktur:
+  /, /leistungen, /leistungen/umzuege, /leistungen/entruempelung, /leistungen/transporte, /leistungen/montage, /leistungen/haushaltsaufloesung, /ueber-uns, /kontakt, /faq, /impressum, /datenschutz, /agb, + 404-Seite
+- Genau 6 Leistungskarten auf Startseite:
+  Umzüge, Entrümpelung, Transporte, Möbelmontage, Haushaltsauflösung, Tragearbeiten/Sonstiges
+  konsistent mit den 5 Detailseiten
+  Tragearbeiten verlinkt bewusst zu /kontakt statt eigener Unterseite
+- Header (sticky): Logo, Telefonnummer als tel:-Link, Navigation:
+  Startseite | Leistungen | Über uns | FAQ | Kontakt
+  mobiles Hamburger-Menü
+- Footer: Firmenname, Adresse, Tel, E-Mail + Links:
+  Startseite, Leistungen, Über uns, FAQ, Kontakt, Impressum, Datenschutz, AGB
+- Kontaktformular exakt mit diesen Feldern:
+  Name*, Telefonnummer*, E-Mail*, Leistungsart (Dropdown), gewünschter Termin (Date), Nachricht*, DSGVO-Checkbox*
+  mit Frontend-Validierung, Pflichtfeldkennzeichnung, Fehlermeldungen, seriöser Erfolgsmeldung
+- 404-Seite mit freundlicher Fehlermeldung, CTA zurück zur Startseite, Telefonnummer sichtbar
+- Alle Texte professionell, konkret, lokal (Monheim am Rhein und Umgebung), vertrauenswürdig, keine Marketingfloskeln
+- Zentralisierte Datendateien:
+  src/data/company.ts, src/data/services.ts, src/data/faq.ts, src/data/seo.ts
+- SEO via react-helmet-async: individueller title + meta description + Open Graph pro Seite
+- Logo (attached_assets/logo_1774606655574.png via @assets-Import) in Header und Footer
+- Farbschema: Schwarz/Gelb/Weiß — Gelb nur für Buttons, Akzente und Icons
+- Accessibility: semantisches HTML, Labels, Tastaturbedienbarkeit, gute Kontraste
+
+Out of scope
+- Backend / Datenbank
+- CMS-Integration
+- Online-Bezahlung
+
+Tasks
+
+1. Artifact erstellen & Dependencies
+- React+Vite Artifact mit Slug "umzuege-website" und previewPath "/" anlegen
+- react-router-dom und react-helmet-async installieren
+
+2. Zentrale Datendateien
+- src/data/company.ts mit allen Firmendaten
+- src/data/services.ts mit 6 Leistungen:
+  Icon, Titel, Kurzbeschreibung, Slug, Details, CTA-Link, Kennzeichnung ob eigene Unterseite vorhanden
+- src/data/faq.ts mit 12+ FAQs zu Ablauf, Terminen, Einsatzgebiet, Entrümpelung, Montage, Transport, Kontakt
+- src/data/seo.ts mit SEO-Metadaten pro Route
+
+3. Layout-Komponenten
+Erstelle wiederverwendbare Komponenten:
+- Header
+- Footer
+- SEOHead
+- PageHero
+- SectionContainer
+- CTAButton
+- ServiceCard
+- FAQAccordion
+- ContactForm
+
+Anforderungen:
+- Header sticky
+- Logo im Header
+- Telefonnummer als klickbarer tel:-Link
+- Desktop-Navigation mit den 5 Hauptpunkten
+- Hamburger-Menü mobil
+- Footer mit Hauptnavigation + Rechtliches
+- FAQAccordion keyboard-navigierbar
+- ContactForm mit allen 7 Feldern, Validierung und Erfolgsmeldung
+
+4. Routing
+- React Router mit allen 14 Routen + 404-Catch-All
+
+5. 404-Seite
+- Freundliche Fehlermeldung auf Deutsch
+- CTA „Zurück zur Startseite“
+- Telefonnummer sichtbar
+- konsistentes Design
+
+6. Startseite
+Vollständig ausbauen mit:
+- Hero mit Headline, Subheadline, 2 CTAs:
+  „Jetzt anfragen“ und „Direkt anrufen“
+- 6 Leistungskarten
+- Warum-wir-Bereich mit 6 Vorteilen
+- Ablauf in 4 Schritten
+- Über-uns-Kurzbereich
+- Kontaktformular
+- Vertrauensbereich / Serviceversprechen
+- FAQ-Teaser
+
+7. Leistungsseiten
+- /leistungen als Übersichtsseite
+- 5 Detailseiten:
+  /leistungen/umzuege
+  /leistungen/entruempelung
+  /leistungen/transporte
+  /leistungen/montage
+  /leistungen/haushaltsaufloesung
+
+Jede Detailseite mit:
+- PageHero
+- Einführung
+- Leistungsdetails
+- Vorteile
+- CTA-Bereich
+
+Hinweis:
+- Tragearbeiten/Sonstiges ist als Karte auf der Startseite vorhanden
+- Diese Karte verweist bewusst auf /kontakt statt auf eine eigene Unterseite
+- Das soll sichtbar und konsistent kommuniziert werden
+
+8. Weitere Seiten
+- Über uns: glaubwürdig, lokal formuliert, professionell
+- Kontakt: Formular + Adressblock mit allen Kontaktdaten
+- FAQ: Akkordeon mit allen relevanten Themen
+- Impressum
+- Datenschutz
+- AGB
+
+Wichtig:
+- Rechtliche Hinweise nur als Code-Kommentar, nicht sichtbar im Frontend
+
+9. Design & SEO
+- Tailwind mit Custom-Farben
+- Schwarz / Gelb / Weiß
+- dezente Animationen
+- Mobile-First
+- react-helmet-async auf allen Seiten
+- sinnvolle Alt-Texte
+- semantisches HTML
+
+Zusätzliche Umsetzungsdetails
+- Verwende benutzerfreundliche deutsche Fehlermeldungen im Kontaktformular
+- Telefonnummer im Header auf Mobilgeräten sofort sichtbar und anklickbar
+- CTA-Beschriftungen über die gesamte Seite konsistent halten
+- Aktive Navigationspunkte visuell hervorheben
+- Für das Kontaktformular einen klaren Buttontext wie „Unverbindlich anfragen“ verwenden
+- Die Seite soll auch ohne echte Fotos hochwertig wirken, z. B. durch strukturierte Layoutblöcke, Icons und starke Typografie
+- Layout so aufbauen, dass echte Bilder, Referenzen oder Kundenbewertungen später leicht ergänzt werden können
+- Keine generischen Floskeln, sondern konkrete, glaubwürdige Sprache mit lokalem Bezug zu Monheim am Rhein und Umgebung

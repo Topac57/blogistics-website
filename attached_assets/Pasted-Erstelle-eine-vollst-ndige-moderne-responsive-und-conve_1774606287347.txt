@@ -1,0 +1,417 @@
+Erstelle eine vollständige, moderne, responsive und conversion-starke Unternehmenswebseite für einen Dienstleister im Bereich:
+
+- Umzüge
+- Entrümpelung
+- Transporte
+- Möbelmontage
+- Demontage und Montage
+- Haushaltsauflösungen
+- Tragearbeiten
+- Kleintransporte
+- Allgemeine handwerkliche und unterstützende Arbeiten rund um Umzug, Transport und Räumung
+
+Die Webseite soll professionell, vertrauenswürdig, schnell, modern und auf Neukundengewinnung optimiert sein. Ziel ist, dass Besucher schnell verstehen, welche Leistungen angeboten werden, Vertrauen aufbauen und direkt Kontakt aufnehmen oder eine Anfrage senden.
+
+## Unternehmensdaten
+Verwende diese Daten auf der Website:
+
+Unternehmen / Inhaber:
+Tolga-Baris Coskun
+
+Adresse:
+Mittelstraße 11
+40789 Monheim am Rhein
+Deutschland
+
+Telefon:
++49 155 60781263
+
+E-Mail:
+tolga-baris.coskun@hotmail.de
+
+Hinweis:
+Falls ein Firmenname benötigt wird, verwende zunächst:
+"Tolga-Baris Coskun Umzüge & Transporte"
+und strukturiere den Code so, dass der Firmenname später leicht austauschbar ist.
+
+## Designvorgaben
+Die Website soll folgende Primärfarben nutzen:
+- Schwarz
+- Gelb
+- Weiß
+
+Designstil:
+- modern
+- hochwertig
+- sauber
+- seriös
+- starke Kontraste
+- mobiloptimiert
+- klare Call-to-Actions
+- gut lesbare Typografie
+- vertrauensbildende Abschnitte
+- schnelle Ladezeit
+- klare Nutzerführung
+
+Visuelle Richtung:
+- dunkler Premium-Look mit gelben Akzenten
+- weiße Flächen für Lesbarkeit
+- große Hero-Sektion
+- starke Buttons in Gelb
+- klare Icons für Leistungen
+- dezente Animationen
+- nicht verspielt, sondern professionell und leistungsorientiert
+
+## Zielgruppe
+Die Seite richtet sich an:
+- Privatkunden
+- Familien
+- Senioren
+- Studenten
+- Gewerbekunden
+- Büros
+- Menschen, die kurzfristig Hilfe bei Umzug, Transport oder Entrümpelung benötigen
+
+## Ziele der Website
+Die Website soll:
+1. Vertrauen aufbauen
+2. Leistungen klar darstellen
+3. Kontaktanfragen generieren
+4. Mobil sehr gut funktionieren
+5. Überzeugende Texte mit lokalem Bezug enthalten
+6. Professionell aussehen und sich von Billig-Anbietern abheben
+
+## Seitenstruktur
+Erstelle folgende Seiten und Unterseiten:
+
+1. Startseite
+2. Leistungen
+   - Umzüge
+   - Entrümpelung
+   - Transporte
+   - Montage / Möbelmontage
+   - Haushaltsauflösung / Räumung
+3. Über uns
+4. Kontakt
+5. Impressum
+6. Datenschutzerklärung
+7. AGB
+
+Optional zusätzlich:
+8. Anfrage / Angebot anfordern
+9. FAQ
+
+## Funktionsanforderungen
+Die Website soll folgende Funktionen enthalten:
+
+- Responsive Navigation mit Sticky Header
+- Gut sichtbare Telefonnummer im Header
+- CTA-Buttons wie:
+  - Jetzt anfragen
+  - Kostenlose Anfrage
+  - Unverbindliches Angebot
+  - Jetzt anrufen
+- Hero-Bereich mit starkem Werbetext
+- Leistungsübersicht mit Icons/Karten
+- Vertrauensbereich mit Vorteilen
+- Warum wir?-Sektion
+- Ablauf / So funktioniert’s
+- Kundenanfrageformular
+- Kontaktbereich mit:
+  - Telefonnummer
+  - E-Mail
+  - Adresse
+- Footer mit allen wichtigen Links
+- Impressum, Datenschutz und AGB im Footer verlinken
+- Mobile-first Umsetzung
+- SEO-Grundoptimierung
+- Ladezeitoptimierung
+- Saubere semantische HTML-Struktur
+- Barrierearme Struktur
+- DSGVO-Hinweis im Kontaktformular
+- Optional: WhatsApp-Button vorbereiten, aber Telefonnummer normal anklickbar als tel:-Link
+- Optional: Klickbare Mailadresse per mailto:
+- Optional: Scroll-Animationen dezent einsetzen
+
+## Startseiten-Inhalte
+Die Startseite soll folgende Bereiche enthalten:
+
+### 1. Hero-Sektion
+Große Headline mit klarem Nutzenversprechen.
+Beispielhafte Tonalität:
+"Zuverlässige Umzüge, Entrümpelungen und Transporte – schnell, sauber und professionell."
+Unterzeile mit Vertrauen, Schnelligkeit und Service.
+Zwei CTAs:
+- Jetzt anfragen
+- Direkt anrufen
+
+### 2. Leistungen
+Zeige die Kernleistungen in modernen Karten:
+- Umzüge
+- Entrümpelungen
+- Transporte
+- Möbelmontage
+- Haushaltsauflösungen
+- Trage- und Hilfsarbeiten
+
+Jede Leistung mit kurzer Erklärung und CTA.
+
+### 3. Warum wir
+Vorteile in Stichpunkten oder Karten:
+- Zuverlässig
+- Pünktlich
+- Saubere Arbeitsweise
+- Faire Preise
+- Freundlicher Service
+- Flexible Terminvergabe
+- Privat und gewerblich
+
+### 4. Ablauf
+Stelle den Ablauf einfach dar:
+1. Anfrage senden
+2. Beratung / Terminabstimmung
+3. Durchführung
+4. Zufriedenes Ergebnis
+
+### 5. Über uns Kurzbereich
+Kurzer professioneller Text über das Unternehmen.
+Nicht übertrieben, sondern bodenständig und vertrauenswürdig.
+
+### 6. Kontakt / Anfrage
+Kontaktformular mit Feldern:
+- Name
+- Telefonnummer
+- E-Mail
+- Leistungsart
+- gewünschter Termin
+- Nachricht
+
+Checkbox:
+"Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu."
+
+### 7. Footer
+Mit:
+- Unternehmensname
+- Adresse
+- Telefon
+- E-Mail
+- Links zu Impressum, Datenschutz, AGB
+
+## Leistungen-Seiten
+Erstelle für jede Hauptleistung eine eigene Unterseite mit SEO-freundlichem Aufbau.
+
+### Umzüge
+Inhalte:
+- Unterstützung bei privaten Umzügen
+- Hilfe bei Wohnungswechseln
+- sorgfältiger Transport
+- Tragearbeiten
+- Unterstützung bei Be- und Entladung
+- professioneller und zuverlässiger Ablauf
+
+### Entrümpelung
+Inhalte:
+- Keller
+- Dachboden
+- Wohnungen
+- Häuser
+- Garagen
+- Büros
+- schnelle und diskrete Räumung
+
+### Transporte
+Inhalte:
+- Kleintransporte
+- Möbeltransporte
+- flexible Transportlösungen
+- termingerechte Durchführung
+
+### Montage / Möbelmontage
+Inhalte:
+- Möbelaufbau
+- Demontage und Wiedermontage
+- Unterstützung nach Umzug oder Transport
+
+### Haushaltsauflösung / Räumung
+Inhalte:
+- komplette Räumungen
+- strukturierte Durchführung
+- schnelle Abwicklung
+- Unterstützung in sensiblen Situationen
+
+## Über uns Seite
+Schreibe einen glaubwürdigen, professionellen Text über ein serviceorientiertes Unternehmen, das Kunden bei Umzug, Entrümpelung, Transport und Montage zuverlässig unterstützt.
+Die Sprache soll nahbar, seriös und vertrauenswürdig sein.
+Kein künstliches Übertreiben.
+Fokus:
+- Zuverlässigkeit
+- Sorgfalt
+- Kundenorientierung
+- faire Zusammenarbeit
+- saubere Durchführung
+
+## Kontaktseite
+Zeige:
+- Telefonnummer
+- E-Mail
+- Adresse
+- Kontaktformular
+- kurze Einladung zur Kontaktaufnahme
+
+Verwende folgende Daten:
+Tolga-Baris Coskun
+Mittelstraße 11
+40789 Monheim am Rhein
+Tel.: +49 155 60781263
+E-Mail: tolga-baris.coskun@hotmail.de
+
+## Rechtliche Seiten
+
+### Impressum
+Erstelle ein vollständiges Impressum auf Basis folgender Daten:
+
+Angaben gemäß § 5 TMG / allgemeine Anbieterkennzeichnung:
+Tolga-Baris Coskun
+Mittelstraße 11
+40789 Monheim am Rhein
+Deutschland
+
+Kontakt:
+Telefon: +49 155 60781263
+E-Mail: tolga-baris.coskun@hotmail.de
+
+Inhaber:
+Tolga-Baris Coskun
+
+Wichtiger Hinweis:
+Steuernummer, IBAN und BIC nicht standardmäßig öffentlich auf der Seite anzeigen.
+Falls dafür Platzhalter vorgesehen werden, dann nur als auskommentierte Option im Code mit Hinweis:
+"Nur ergänzen, wenn rechtlich oder geschäftlich ausdrücklich gewünscht."
+
+### Datenschutzerklärung
+Erstelle eine grundlegende Datenschutzerklärung für eine Unternehmenswebseite mit:
+- Verantwortlicher
+- Erhebung und Verarbeitung personenbezogener Daten
+- Kontaktformular
+- Server-Logfiles
+- E-Mail- und Telefonkontakt
+- Rechte der betroffenen Personen
+- Hinweis auf Hosting
+- Hinweis, dass Inhalte rechtlich geprüft werden sollten
+
+Wenn Tools wie Google Fonts, Maps, Analytics oder ReCaptcha eingebunden werden, dann nur datenschutzfreundlich und mit entsprechendem Hinweis.
+Standardmäßig möglichst datensparsam umsetzen.
+
+### AGB
+Erstelle allgemeine, neutrale AGB-Grundlagen für ein Dienstleistungsunternehmen in den Bereichen Umzug, Entrümpelung, Transporte und Montage.
+Mit sinnvollen Abschnitten zu:
+- Geltungsbereich
+- Leistungsumfang
+- Angebot und Vertragsschluss
+- Mitwirkungspflichten des Kunden
+- Preise und Zahlung
+- Termine und Ausführung
+- Haftung
+- Rücktritt / Stornierung
+- Schlussbestimmungen
+
+Formuliere sauber und professionell, aber mit Hinweis im Code oder Kommentar:
+"AGB sollten vor Veröffentlichung rechtlich geprüft werden."
+
+## SEO-Anforderungen
+Die Seite soll suchmaschinenfreundlich aufgebaut sein.
+
+Lege sinnvolle SEO-Titel, Meta-Descriptions und Überschriften an für:
+- Startseite
+- Umzüge
+- Entrümpelung
+- Transporte
+- Montage
+- Kontakt
+
+Lokaler SEO-Fokus:
+- Monheim am Rhein
+- Umgebung
+- NRW / Nordrhein-Westfalen optional
+
+Baue natürlich klingende lokale Formulierungen ein, zum Beispiel:
+- Umzugsservice in Monheim am Rhein
+- Entrümpelung in Monheim und Umgebung
+- Transporte und Montage im Raum Monheim
+
+Keine Keyword-Spam-Texte.
+
+## Technische Anforderungen
+Baue die Website mit einer modernen Struktur und sauberem Code.
+Bevorzugt:
+- React oder Next.js, falls auf Replit sinnvoll
+- alternativ sauberes HTML/CSS/JS, wenn einfacher
+- komponentenbasierte Struktur
+- wiederverwendbare Sektionen
+- saubere Ordnerstruktur
+- leicht wartbar
+- gut kommentiert
+
+Falls umgesetzt als React/Next-Projekt:
+- wiederverwendbare Komponenten für Header, Footer, CTA, Leistungs-Karten, Formular, Rechtstexte
+- klare Routing-Struktur
+- responsive Layouts
+- moderne UI
+
+## Texte / Copywriting
+Alle Texte sollen:
+- auf Deutsch sein
+- professionell und glaubwürdig klingen
+- verkaufsorientiert, aber nicht unseriös sein
+- klar verständlich sein
+- Vertrauen schaffen
+- zu Kontaktaufnahme motivieren
+
+Vermeide:
+- leere Marketingphrasen
+- übertriebene Superlative
+- aggressive Werbesprache
+
+## UX / Conversion
+Achte besonders auf:
+- klare Handlungsaufforderungen
+- Telefonnummer immer schnell erreichbar
+- Kontaktformular gut sichtbar
+- wenige Reibungspunkte
+- schnelle Orientierung
+- Vertrauen durch saubere Struktur und klare Aussagen
+
+## Extras
+Wenn möglich, ergänze:
+- FAQ-Bereich
+- kleine Kundenvorteils-Sektion
+- lokale Vertrauensbotschaft
+- klare Serviceversprechen ohne rechtlich problematische Garantien
+- vorbereitete Bereiche für zukünftige Kundenbewertungen
+- vorbereitete Bilder-/Icon-Platzhalter passend zu Umzug, Transport, Entrümpelung, Montage
+
+## Wichtige Hinweise zur Ausgabe
+Bitte liefere:
+1. das vollständige Projekt
+2. alle Seiten
+3. moderne UI
+4. deutsche Texte
+5. rechtliche Seiten integriert
+6. sauberen, produktionsnahen Code
+7. klare Dateistruktur
+8. einfache Anpassbarkeit
+9. gute Mobile-Ansicht
+10. eine hochwertige Startseite mit starkem Fokus auf Kundengewinnung
+
+Erstelle außerdem:
+- sinnvolle Seitentitel
+- Meta-Beschreibungen
+- Footer
+- Navigationsstruktur
+- Kontaktformular
+- vollständige deutsche Inhalte
+- Impressum
+- Datenschutzerklärung
+- AGB
+
+Falls Informationen fehlen, verwende sinnvolle neutrale Platzhalter und markiere sie klar.

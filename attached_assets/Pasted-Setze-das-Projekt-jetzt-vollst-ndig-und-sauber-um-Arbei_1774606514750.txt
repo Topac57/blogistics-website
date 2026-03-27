@@ -1,0 +1,170 @@
+Setze das Projekt jetzt vollständig und sauber um. Arbeite nicht nur nach grober Struktur, sondern liefere eine hochwertige, produktionsnahe Frontend-Webseite mit klarer Komponentenarchitektur.
+
+Wichtige Umsetzungsregeln:
+
+1. TECH-STACK
+- Verwende React + Vite
+- Nutze React Router für die Unterseiten
+- Saubere komponentenbasierte Struktur
+- Wiederverwendbare Komponenten für Header, Footer, CTA, Section-Container, PageHero, ServiceCard, FAQ, ContactForm
+- Mobile-first entwickeln
+
+2. DATEISTRUKTUR
+Erstelle eine klare Struktur, z. B.:
+- src/components/
+- src/pages/
+- src/data/
+- src/assets/
+- src/styles/
+- public/
+
+3. DESIGN
+- Premium-Look in Schwarz, Gelb, Weiß
+- Gelb nur gezielt für Buttons, Akzente, Icons und Highlights
+- Klare Typografie, gute Abstände, professionelles Layout
+- Keine verspielte Optik
+- Dezente Hover-Effekte und kleine Animationen
+- Sehr gute Mobilansicht
+- Sticky Header
+- Hamburger-Menü mobil
+
+4. LOGO
+- Prüfe, ob die hochgeladene JP2-Datei direkt nutzbar ist
+- Falls problematisch, wandle sie intern in eine webfreundliche Nutzung um oder dokumentiere klar, dass PNG/WebP empfohlen ist
+- Logo im Header und Footer verwenden
+
+5. SEITEN
+Baue folgende Seiten:
+- /
+- /leistungen
+- /leistungen/umzuege
+- /leistungen/entruempelung
+- /leistungen/transporte
+- /leistungen/montage
+- /leistungen/haushaltsaufloesung
+- /ueber-uns
+- /kontakt
+- /faq
+- /impressum
+- /datenschutz
+- /agb
+
+6. STARTSEITE
+Die Startseite soll diese Bereiche enthalten:
+- Hero mit klarer Headline, Subheadline, 2 CTAs
+- Leistungsübersicht mit 6 Leistungskarten
+- Warum wir
+- Ablauf in 4 Schritten
+- Kurzbereich Über uns
+- Kontaktformular
+- Vertrauensbereich / Serviceversprechen
+- FAQ-Teaser
+- Footer
+
+7. TEXTE
+Alle Texte auf Deutsch.
+Ton:
+- professionell
+- vertrauenswürdig
+- lokal
+- bodenständig
+- verkaufsstark, aber nicht übertrieben
+Vermeide generische Standardtexte. Schreibe so, dass ein echter Dienstleister aus Monheim am Rhein glaubwürdig wirkt.
+
+8. UNTERNEHMENSDATEN
+Verwende exakt diese Daten:
+
+Tolga-Baris Coskun
+Mittelstraße 11
+40789 Monheim am Rhein
+
+Telefon: +49 155 60781263
+E-Mail: tolga-baris.coskun@hotmail.de
+
+Nutze als Namen:
+Tolga-Baris Coskun Umzüge & Transporte
+
+9. KONTAKTFORMULAR
+Felder:
+- Name
+- Telefonnummer
+- E-Mail
+- Leistungsart
+- gewünschter Termin
+- Nachricht
+- DSGVO-Checkbox
+
+Anforderungen:
+- Frontend-Validierung
+- Pflichtfelder kennzeichnen
+- Fehlerhinweise anzeigen
+- Erfolgsnachricht simulieren
+- Kein Backend nötig, aber saubere Struktur vorbereiten
+
+10. SEO
+Für jede Seite:
+- individuellen Seitentitel
+- Meta Description
+- sinnvolle H1
+- lokaler Fokus auf Monheim am Rhein und Umgebung
+- semantische HTML-Struktur
+- sinnvolle Alt-Texte
+- Open Graph Basisdaten
+- Favicon vorbereiten, wenn möglich
+
+11. LEISTUNGSSEITEN
+Jede Leistungsseite soll enthalten:
+- Hero-Bereich mit Titel
+- kurze Einführung
+- Leistungsdetails
+- Vorteile
+- CTA-Bereich
+- Kontaktmöglichkeit
+
+12. FAQ
+Erstelle sinnvolle FAQs zu:
+- Ablauf einer Anfrage
+- kurzfristige Termine
+- Einsatzgebiet
+- Entrümpelung
+- Montage
+- Transporthilfe
+- Kontaktaufnahme
+
+13. RECHTLICHE SEITEN
+Erstelle:
+- Impressum
+- Datenschutzerklärung
+- AGB
+
+Wichtig:
+- Keine IBAN, BIC oder Steuernummer öffentlich prominent ausgeben
+- Falls im Code vorgesehen, nur als klar kommentierte optionale Platzhalter
+- Kennzeichne in AGB und Datenschutz sichtbar im Code, dass vor Veröffentlichung eine rechtliche Prüfung empfohlen wird
+
+14. FOOTER
+Im Footer anzeigen:
+- Firmenname
+- Adresse
+- Telefon
+- E-Mail
+- Links zu allen Hauptseiten
+- Impressum / Datenschutz / AGB
+
+15. CONVERSION-OPTIMIERUNG
+Achte besonders auf:
+- sichtbare Telefonnummer im Header
+- CTA-Buttons an mehreren Stellen
+- gute Lesbarkeit
+- wenige Ablenkungen
+- professioneller Vertrauensaufbau
+- Kontaktmöglichkeit auf jeder wichtigen Seite
+
+16. OUTPUT
+Liefere ein vollständiges, lauffähiges Projekt.
+Achte auf:
+- sauberen Code
+- Wiederverwendbarkeit
+- gute Struktur
+- professionelle Optik
+- echte Fertigstellung aller Seiten, nicht nur Platzhalter
