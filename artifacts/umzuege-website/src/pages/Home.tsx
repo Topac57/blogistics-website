@@ -15,7 +15,6 @@ export function Home() {
         description={seoData.pages.home.description}
         path={seoData.pages.home.path}
       />
-
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-zinc-950">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-800 via-zinc-950 to-black"></div>
@@ -46,9 +45,7 @@ export function Home() {
               Entrümpelungen & Transporte
             </h1>
             
-            <p className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed max-w-2xl">
-              Professionell, pünktlich und zu fairen Preisen – für Privat- und Gewerbekunden in Monheim am Rhein und der gesamten Region.
-            </p>
+            <p className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed max-w-2xl">Professionell, pünktlich und zu fairen Preisen – für Privat- und Gewerbekunden in Düsseldorf und der gesamten Region.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 items-center md:items-start">
               <a 
@@ -68,7 +65,6 @@ export function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* SERVICES OVERVIEW */}
       <section className="py-24 bg-zinc-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,7 +117,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
       {/* WHY US */}
       <section className="py-24 bg-white border-t border-zinc-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -183,7 +178,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
       {/* PROCESS */}
       <section className="py-24 bg-zinc-950 text-white relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
@@ -213,7 +207,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
       {/* FAQ TEASER */}
       <section className="py-20 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -241,7 +234,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
       {/* FORM SECTION */}
       <section id="anfrage" className="py-24 bg-zinc-50 relative">
         <div className="absolute top-0 left-0 w-full h-1/2 bg-zinc-950"></div>
@@ -255,7 +247,6 @@ export function Home() {
           
         </div>
       </section>
-
       {/* ABOUT SHORT & LOCAL TRUST */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
