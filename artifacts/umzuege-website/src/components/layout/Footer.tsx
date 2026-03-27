@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 import { company } from '@/data/company';
+import { services } from '@/data/services';
 import logo from '@/assets/logo.png';
 
 export function Footer() {
@@ -68,14 +69,14 @@ export function Footer() {
               Leistungen
             </h3>
             <ul className="space-y-3 text-sm">
-              {['Umzüge', 'Entrümpelung', 'Transporte', 'Möbelmontage', 'Haushaltsauflösung'].map((item) => (
-                <li key={item}>
+              {services.filter(s => s.hasDetailPage).map((service) => (
+                <li key={service.slug}>
                   <Link 
-                    to={`/leistungen/${item.toLowerCase().replace('ö', 'oe').replace('ü', 'ue')}`}
+                    to={`/leistungen/${service.slug}`}
                     className="flex items-center gap-2 hover:text-primary transition-colors group"
                   >
                     <ArrowRight className="w-4 h-4 text-zinc-700 group-hover:text-primary transition-colors" />
-                    {item}
+                    {service.title}
                   </Link>
                 </li>
               ))}
