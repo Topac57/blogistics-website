@@ -176,6 +176,52 @@ export function Home() {
           </div>
         </div>
       </section>
+      {/* TRUST BAND */}
+      <section className="py-16 bg-zinc-950 border-t border-zinc-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-10"
+          >
+            <p className="text-zinc-400 text-sm uppercase tracking-widest font-medium">Unsere Auftraggeber</p>
+          </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zinc-800 rounded-2xl overflow-hidden">
+            {[
+              {
+                title: "Private Kunden",
+                desc: "Wohnungsumzüge, Haushaltsauflösungen, Kleintransporte – wir helfen Menschen in allen Lebenssituationen verlässlich und unkompliziert weiter."
+              },
+              {
+                title: "Unternehmenskunden",
+                desc: "Büroumzüge und gewerbliche Verlagerungen organisieren wir strukturiert, termingenau und mit so wenig Betriebsunterbrechung wie möglich."
+              },
+              {
+                title: "Öffentliche Stellen",
+                desc: "Seit Jahren führen wir auch Aufträge für kommunale und öffentliche Einrichtungen im Raum Düsseldorf aus – stets diskret, pünktlich und ordnungsgemäß."
+              },
+              {
+                title: "Unabhängig vom Auftrag",
+                desc: "Was auch immer der Anlass: Wir arbeiten für alle Auftraggeber mit derselben Sorgfalt und demselben Anspruch an Qualität."
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="bg-zinc-950 p-8"
+              >
+                <div className="w-8 h-0.5 bg-primary mb-5"></div>
+                <h3 className="text-white font-semibold text-lg mb-3">{item.title}</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* PROCESS */}
       <section className="py-24 bg-zinc-950 text-white relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>

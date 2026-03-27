@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { MapPin, Target, Users, ArrowRight } from 'lucide-react';
+import { MapPin, Target, Users, Briefcase, ArrowRight } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { company } from '@/data/company';
 
@@ -42,6 +42,9 @@ export function About() {
                 <p>
                   Egal ob privater Wohnungswechsel, Firmenumzug oder die komplette Haushaltsauflösung – wir packen an, damit Sie entlastet werden.
                 </p>
+                <p>
+                  Unser Kundenstamm ist bewusst breit aufgestellt: Neben vielen privaten Haushalten betreuen wir regelmäßig auch Unternehmen und Einrichtungen der öffentlichen Hand im Raum Düsseldorf. Diese Vielfalt hat uns gelehrt, flexibel, diskret und strukturiert zu arbeiten – Eigenschaften, von denen letztlich alle unsere Auftraggeber gleichermaßen profitieren.
+                </p>
               </div>
             </motion.div>
             
@@ -58,7 +61,7 @@ export function About() {
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-zinc-50 p-8 rounded-2xl border border-zinc-100 text-center">
               <div className="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-primary" />
@@ -86,6 +89,16 @@ export function About() {
               <h3 className="text-xl font-bold text-zinc-900 mb-3">Kunden im Fokus</h3>
               <p className="text-zinc-600">
                 Ihre Zufriedenheit ist unser Antrieb. Wir arbeiten so lange, bis alles perfekt an seinem Platz steht.
+              </p>
+            </div>
+
+            <div className="bg-zinc-50 p-8 rounded-2xl border border-zinc-100 text-center">
+              <div className="w-16 h-16 bg-white shadow-sm rounded-full flex items-center justify-center mx-auto mb-6">
+                <Briefcase className="w-8 h-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-zinc-900 mb-3">Vielfältige Auftraggeber</h3>
+              <p className="text-zinc-600">
+                Von privaten Haushalten über mittelständische Unternehmen bis hin zu öffentlichen Einrichtungen – unsere Erfahrung reicht über viele Auftragstypen und Anforderungsprofile hinaus.
               </p>
             </div>
           </div>

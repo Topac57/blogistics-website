@@ -117,6 +117,12 @@ export function ServiceDetail() {
                     {company.phoneDisplay}
                   </a>
                 </div>
+
+                <div className="mt-8 pt-6 border-t border-zinc-200">
+                  <p className="text-xs text-zinc-500 leading-relaxed">
+                    Wir arbeiten für private, gewerbliche und öffentliche Auftraggeber im Raum Düsseldorf. Verlässlichkeit und Diskretion sind für uns bei jedem Auftrag selbstverständlich.
+                  </p>
+                </div>
               </div>
             </div>
 
