@@ -13,7 +13,6 @@ export function About() {
         description="Lernen Sie B Logistics kennen. Ihr zuverlässiger Partner für Umzüge und Transporte im Raum Düsseldorf und umliegenden Städten."
         path="/ueber-uns"
       />
-
       <section className="bg-zinc-950 py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -27,7 +26,6 @@ export function About() {
           </motion.div>
         </div>
       </section>
-
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
@@ -53,7 +51,7 @@ export function About() {
               {/* placeholder professional handshake/team */}
               <div className="relative">
                 <div className="absolute inset-0 bg-primary translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
-                <div className="rounded-3xl w-full h-[500px] flex items-center justify-center overflow-hidden" style={{ backgroundColor: '#f2f2f2' }}>
+                <div className="rounded-3xl w-full h-[500px] flex items-center justify-center overflow-hidden bg-[#f7f7f7]" style={{ backgroundColor: '#f2f2f2' }}>
                   <img
                     src={logo}
                     alt={company.name}
@@ -107,7 +105,6 @@ export function About() {
           </div>
         </div>
       </section>
-
       <section className="py-20 bg-primary text-primary-foreground text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6">Möchten Sie uns persönlich kennenlernen?</h2>
