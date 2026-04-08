@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Target, Users, Briefcase, ArrowRight } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { company } from '@/data/company';
+import logo from '@/assets/logo.png';
 
 export function About() {
   return (
@@ -52,11 +53,13 @@ export function About() {
               {/* placeholder professional handshake/team */}
               <div className="relative">
                 <div className="absolute inset-0 bg-primary translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
-                <img 
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?w=800&q=80" 
-                  alt="Vertrauensvoller Service" 
-                  className="rounded-3xl shadow-xl w-full object-cover h-[500px]"
-                />
+                <div className="rounded-3xl shadow-xl w-full h-[500px] bg-white flex items-center justify-center overflow-hidden">
+                  <img
+                    src={logo}
+                    alt={company.name}
+                    className="w-4/5 object-contain drop-shadow-2xl"
+                  />
+                </div>
               </div>
             </motion.div>
           </div>
