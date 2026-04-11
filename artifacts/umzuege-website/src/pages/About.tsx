@@ -51,7 +51,7 @@ export function About() {
               {/* placeholder professional handshake/team */}
               <div className="relative">
                 <div className="absolute inset-0 bg-primary translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
-                <div className="rounded-3xl w-full h-[500px] flex items-center justify-center overflow-hidden bg-[#f7f7f7]" style={{ backgroundColor: '#f2f2f2' }}>
+                <div className="rounded-3xl w-full h-[500px] flex items-center justify-center overflow-hidden bg-white">
                   <img
                     src={logo}
                     alt={company.name}
