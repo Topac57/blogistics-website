@@ -12,5 +12,5 @@ export const company = {
   phoneDisplay: "0155 60781263",
   email: "tolga-baris.coskun@hotmail.de",
   website: "https://b-logistics.de",
-  workingHours: "Mo-Sa: 08:00 - 18:00 Uhr"
+  workingHours: "Mo-Fr: 10:00 - 14:00 Uhr"
 };
