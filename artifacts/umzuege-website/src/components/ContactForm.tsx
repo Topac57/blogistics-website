@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Send, CheckCircle2, Loader2 } from 'lucide-react';
+import { Send, CheckCircle2, Loader2, AlertCircle } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, "Bitte geben Sie Ihren vollständigen Namen ein."),
@@ -16,22 +16,59 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT as string | undefined;
+
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const { register, handleSubmit, formState: { errors, isValid } } = useForm<FormValues>({
+  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     mode: "onBlur"
   });
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
-    // Simulate API call since no real backend exists
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form Submitted", data);
-    setIsSubmitting(false);
-    setIsSuccess(true);
+    setSubmitError(null);
+
+    if (!FORMSPREE_ENDPOINT) {
+      setIsSubmitting(false);
+      setSubmitError("Der Versanddienst ist noch nicht eingerichtet. Bitte kontaktieren Sie uns direkt per Telefon oder E-Mail.");
+      return;
+    }
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: data.name,
+          telefon: data.phone,
+          email: data.email,
+          leistung: data.service,
+          wunschtermin: data.date,
+          nachricht: data.message,
+          _subject: `Neue Anfrage von ${data.name} – ${data.service}`
+        })
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        reset();
+      } else {
+        const json = await response.json().catch(() => ({}));
+        const msg = (json as { error?: string }).error || "Unbekannter Fehler";
+        setSubmitError(`Übermittlung fehlgeschlagen: ${msg}. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.`);
+      }
+    } catch {
+      setSubmitError("Netzwerkfehler. Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {
@@ -42,9 +79,9 @@ export function ContactForm() {
         </div>
         <h3 className="text-2xl font-bold text-emerald-900 mb-2">Vielen Dank für Ihre Anfrage!</h3>
         <p className="text-emerald-700">
-          Wir haben Ihre Nachricht erhalten und werden uns schnellstmöglich bei Ihnen melden.
+          Ihre Nachricht wurde erfolgreich übermittelt. Wir werden uns schnellstmöglich bei Ihnen melden.
         </p>
-        <button 
+        <button
           onClick={() => setIsSuccess(false)}
           className="mt-6 text-emerald-600 font-semibold hover:text-emerald-800 underline"
         >
@@ -56,11 +93,16 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-zinc-100 relative overflow-hidden">
-      {/* Decorative top border */}
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary/80 to-primary"></div>
-      
+
+      {submitError && (
+        <div className="flex items-start gap-3 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl text-sm">
+          <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+          <span>{submitError}</span>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Name */}
         <div className="space-y-2">
           <label htmlFor="name" className="text-sm font-semibold text-zinc-700">Name *</label>
           <input
@@ -72,7 +114,6 @@ export function ContactForm() {
           {errors.name && <p className="text-red-500 text-xs font-medium">{errors.name.message}</p>}
         </div>
 
-        {/* Phone */}
         <div className="space-y-2">
           <label htmlFor="phone" className="text-sm font-semibold text-zinc-700">Telefonnummer *</label>
           <input
@@ -85,7 +126,6 @@ export function ContactForm() {
           {errors.phone && <p className="text-red-500 text-xs font-medium">{errors.phone.message}</p>}
         </div>
 
-        {/* Email */}
         <div className="space-y-2">
           <label htmlFor="email" className="text-sm font-semibold text-zinc-700">E-Mail *</label>
           <input
@@ -98,7 +138,6 @@ export function ContactForm() {
           {errors.email && <p className="text-red-500 text-xs font-medium">{errors.email.message}</p>}
         </div>
 
-        {/* Service Type */}
         <div className="space-y-2">
           <label htmlFor="service" className="text-sm font-semibold text-zinc-700">Gewünschte Leistung *</label>
           <select
@@ -119,7 +158,6 @@ export function ContactForm() {
         </div>
       </div>
 
-      {/* Date */}
       <div className="space-y-2">
         <label htmlFor="date" className="text-sm font-semibold text-zinc-700">Wunschtermin *</label>
         <input
@@ -131,7 +169,6 @@ export function ContactForm() {
         {errors.date && <p className="text-red-500 text-xs font-medium">{errors.date.message}</p>}
       </div>
 
-      {/* Message */}
       <div className="space-y-2">
         <label htmlFor="message" className="text-sm font-semibold text-zinc-700">Ihre Nachricht *</label>
         <textarea
@@ -144,7 +181,6 @@ export function ContactForm() {
         {errors.message && <p className="text-red-500 text-xs font-medium">{errors.message.message}</p>}
       </div>
 
-      {/* Privacy Checkbox */}
       <div className="flex items-start gap-3">
         <div className="pt-1">
           <input
@@ -162,13 +198,12 @@ export function ContactForm() {
         </div>
       </div>
 
-      {/* Submit Button */}
       <button
         type="submit"
         disabled={isSubmitting || !isValid}
         className={`w-full flex items-center justify-center gap-2 py-4 rounded-xl font-bold text-lg shadow-lg transition-all duration-300 ${
-          isSubmitting || !isValid 
-            ? 'bg-zinc-300 text-zinc-500 cursor-not-allowed shadow-none' 
+          isSubmitting || !isValid
+            ? 'bg-zinc-300 text-zinc-500 cursor-not-allowed shadow-none'
             : 'bg-primary text-primary-foreground hover:bg-[#e5ae06] hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/30'
         }`}
       >
@@ -184,7 +219,7 @@ export function ContactForm() {
           </>
         )}
       </button>
-      
+
       <p className="text-xs text-center text-zinc-400">* Pflichtfelder</p>
     </form>
   );
