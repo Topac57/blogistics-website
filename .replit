@@ -28,4 +28,4 @@ timeoutMs = 20000
 [userenv]
 
 [userenv.shared]
-VITE_FORMSPREE_ENDPOINT = "https://formspree.io/f/xjgjrokk"
+VITE_FORMSPREE_ENDPOINT = "https://formspree.io/f/xvzlooya"
