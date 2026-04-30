@@ -161,7 +161,7 @@ export function Home() {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative hidden lg:block"
             >
               <img 
                 src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=800&q=80" 
