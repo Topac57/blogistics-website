@@ -10,4 +10,10 @@ dist
 .DS_Store
 
 .vercel
+.local/
+
+.replit
+
+.replit.nix
+*.tsbuildinfo
 
