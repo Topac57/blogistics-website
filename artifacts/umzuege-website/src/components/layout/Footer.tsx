@@ -110,6 +110,29 @@ export function Footer() {
             Regional. Zuverlässig. Professionell.
           </p>
         </div>
+
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <span className="text-[11px] uppercase tracking-[0.18em] text-white/35">
+            Designed &amp; developed by
+          </span>
+          <a
+            href="https://www.codion.digital"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Codion – Designed & developed by"
+            className="group inline-flex items-center rounded-md px-2 py-1 transition-all duration-300 hover:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+          >
+            <img
+              src="/images/Logo-Neu.webp"
+              alt="Codion"
+              width="6563"
+              height="849"
+              loading="lazy"
+              decoding="async"
+              className="h-5 w-auto animate-codion-shimmer opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );
