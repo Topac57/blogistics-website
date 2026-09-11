@@ -76,10 +76,7 @@ export function Home() {
 
             <h1 className="mx-auto max-w-4xl text-[2.6rem] leading-[1.06] sm:text-[3.4rem] lg:text-[4.4rem] font-bold text-ink mb-7">
               Umziehen, ohne sich{' '}
-              <span className="relative inline-block">
-                <span className="relative z-10">selbst zu tragen.</span>
-                <span className="absolute left-0 right-0 bottom-1.5 h-3.5 md:h-5 bg-primary/45 -rotate-[0.6deg] rounded-sm z-0" />
-              </span>
+              <span className="marker">selbst zu tragen.</span>
             </h1>
 
             <p className="lead mx-auto max-w-2xl mb-9">

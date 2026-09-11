@@ -25,7 +25,7 @@ export function FAQ() {
 
       <PageHero
         eyebrow="Häufige Fragen"
-        title={<>Antworten, bevor Sie <span className="relative inline-block"><span className="relative z-10">fragen müssen</span><span className="absolute left-0 right-0 bottom-1 h-3 md:h-4 bg-primary/45 -rotate-[0.5deg] rounded-sm z-0" /></span></>}
+        title={<>Antworten, bevor Sie <span className="marker">fragen müssen</span></>}
         lead="Kosten, Vorlauf, Haftung, Ablauf – die Fragen, die uns am Telefon am häufigsten gestellt werden, hier ausführlich beantwortet."
         decor={ConsultationDesk}
       />

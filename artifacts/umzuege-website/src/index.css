@@ -140,7 +140,7 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-amber-ink;
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-amber-ink;
   }
   .eyebrow::before {
     content: "";
@@ -177,6 +177,21 @@
 
   .chip {
     @apply inline-flex items-center gap-2 rounded-full border border-card-border bg-card/80 px-3.5 py-1.5 text-sm font-medium text-ink-soft backdrop-blur-sm;
+  }
+
+  /* Marker-Hervorhebung. Als Hintergrund statt absolut positioniert:
+     so darf der Text normal umbrechen und die Auszeichnung läuft mit.
+     Vorher erzwang ein inline-block-Span den Umbruch und ließ auf schmalen
+     Bildschirmen einzelne Wörter allein auf einer Zeile stehen. */
+  .marker {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(
+      transparent 58%,
+      hsl(var(--primary) / 0.45) 58%,
+      hsl(var(--primary) / 0.45) 94%,
+      transparent 94%
+    );
   }
 
   .link-arrow {

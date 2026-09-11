@@ -49,7 +49,7 @@ export default function NotFound() {
                 <Link
                   key={service.id}
                   to={`/leistungen/${service.slug}`}
-                  className="chip hover:border-primary-line hover:text-ink transition-colors"
+                  className="chip py-3 px-5 hover:border-primary-line hover:text-ink transition-colors"
                 >
                   {service.title}
                   <ArrowRight className="w-3.5 h-3.5 opacity-50" />

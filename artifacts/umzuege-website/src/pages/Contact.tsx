@@ -47,7 +47,7 @@ export function Contact() {
 
       <PageHero
         eyebrow="Kontakt"
-        title={<>Sagen Sie uns, was <span className="relative inline-block"><span className="relative z-10">ansteht</span><span className="absolute left-0 right-0 bottom-1 h-3 md:h-4 bg-primary/45 -rotate-[0.5deg] rounded-sm z-0" /></span></>}
+        title={<>Sagen Sie uns, was <span className="marker">ansteht</span></>}
         lead="Ein paar Angaben genügen für den ersten Schritt. Wir melden uns in der Regel am selben Werktag mit einem Terminvorschlag für die kostenlose Besichtigung."
         decor={ContactScene}
       />

@@ -42,7 +42,7 @@ export function About() {
 
       <PageHero
         eyebrow="Über uns"
-        title={<>Ein Betrieb, kein <span className="relative inline-block"><span className="relative z-10">Callcenter</span><span className="absolute left-0 right-0 bottom-1 h-3 md:h-4 bg-primary/45 -rotate-[0.5deg] rounded-sm z-0" /></span></>}
+        title={<>Ein Betrieb, kein <span className="marker">Callcenter</span></>}
         lead={`${company.name} ist ein kleines Unternehmen aus Monheim am Rhein. Wer bei uns anruft, spricht mit jemandem, der am Umzugstag selbst mit anpackt.`}
         decor={DepotScene}
       />
