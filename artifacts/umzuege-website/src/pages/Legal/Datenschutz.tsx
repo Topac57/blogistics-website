@@ -1,4 +1,5 @@
 import { SEOHead } from '@/components/SEOHead';
+import { LockedFiles } from '@/components/decor/Silhouettes';
 import { company } from '@/data/company';
 import { seoData } from '@/data/seo';
 
@@ -7,8 +8,9 @@ export function Datenschutz() {
     <>
       <SEOHead title={seoData.pages.datenschutz.title} description={seoData.pages.datenschutz.description} path={seoData.pages.datenschutz.path} />
       
-      <section className="py-24 bg-white min-h-[70vh]">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-zinc prose-headings:font-display">
+      <section className="relative overflow-hidden py-20 md:py-24 bg-background bg-mesh-soft min-h-[70vh]">
+        <LockedFiles className="pointer-events-none absolute inset-x-0 bottom-0 h-[110px] md:h-[150px] text-tint-sky/20 mask-fade-top" />
+        <div className="relative max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 break-words prose prose-stone prose-headings:font-display prose-headings:text-ink prose-a:text-amber-ink prose-a:no-underline hover:prose-a:underline prose-strong:text-ink">
           <h1>Datenschutzerklärung</h1>
           
           <h2>1. Datenschutz auf einen Blick</h2>

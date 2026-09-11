@@ -1,50 +1,125 @@
-export const faqs = [
+export type FaqCategory = "Ablauf & Termine" | "Preise & Angebot" | "Leistungen" | "Sicherheit & Haftung";
+
+export type Faq = {
+  question: string;
+  answer: string;
+  category: FaqCategory;
+};
+
+export const faqCategories: FaqCategory[] = [
+  "Ablauf & Termine",
+  "Preise & Angebot",
+  "Leistungen",
+  "Sicherheit & Haftung"
+];
+
+export const faqs: Faq[] = [
   {
+    category: "Ablauf & Termine",
     question: "Wie läuft eine Anfrage bei Ihnen ab?",
-    answer: "Sie können uns telefonisch, per E-Mail oder über unser Kontaktformular erreichen. In der Regel vereinbaren wir zunächst einen kostenlosen und unverbindlichen Besichtigungstermin vor Ort, um den Aufwand präzise einzuschätzen. Anschließend erhalten Sie von uns ein Festpreisangebot."
+    answer:
+      "Sie melden sich telefonisch, per E-Mail oder über das Formular. Wir rufen in der Regel am selben Werktag zurück und vereinbaren eine kostenlose Besichtigung – vor Ort oder per Videoanruf, wenn es schnell gehen soll. Danach erhalten Sie ein schriftliches Festpreisangebot. Erst wenn Sie zusagen, planen wir Team und Fahrzeug fest ein."
   },
   {
-    question: "In welchem Gebiet sind Sie tätig?",
-    answer: "Unser Schwerpunkt liegt im Raum Düsseldorf und den umliegenden Städten – darunter Ratingen, Neuss, Mettmann, Langenfeld, Leverkusen und weitere Orte im Rheinland. Unsere Geschäftsadresse befindet sich in Monheim am Rhein. Überregionale Transporte sind auf Anfrage ebenfalls möglich."
+    category: "Ablauf & Termine",
+    question: "Wie viel Vorlauf brauchen Sie?",
+    answer:
+      "Für einen kompletten Umzug empfehlen wir zwei bis vier Wochen Vorlauf, besonders zum Monatsende und zum Quartalswechsel – das sind die gefragtesten Termine. Kleinere Transporte und Tragearbeiten lassen sich oft innerhalb weniger Tage einschieben, je nach Auslastung auch kurzfristiger."
   },
   {
-    question: "Sind auch kurzfristige Termine möglich?",
-    answer: "Ja, je nach aktueller Auftragslage können wir auch kurzfristige und eilige Aufträge übernehmen. Rufen Sie uns am besten direkt an, damit wir schnell reagieren können."
+    category: "Ablauf & Termine",
+    question: "Sind auch kurzfristige oder eilige Aufträge möglich?",
+    answer:
+      "Ja. Wenn es schnell gehen muss, rufen Sie am besten direkt an statt zu schreiben – dann sehen wir sofort im Kalender nach, was sich einrichten lässt. Eiltransporte im Raum Düsseldorf sind je nach Tag auch tagesgleich machbar."
   },
   {
-    question: "Bieten Sie Festpreise an?",
-    answer: "Ja, Transparenz ist uns sehr wichtig. Nach einer Besichtigung (vor Ort oder anhand detaillierter Fotos/Videos) erstellen wir Ihnen ein verbindliches Festpreisangebot. So gibt es für Sie keine bösen Überraschungen am Ende."
-  },
-  {
-    question: "Was kostet eine Entrümpelung?",
-    answer: "Die Kosten für eine Entrümpelung hängen stark von der Menge des zu entsorgenden Materials, der Etage und den Entsorgungsgebühren der Deponie ab. Wir schauen uns das Objekt kostenlos an und machen Ihnen ein transparentes Angebot."
-  },
-  {
-    question: "Bieten Sie auch Möbelmontage an?",
-    answer: "Selbstverständlich! Wir bauen Ihre Schränke, Betten und andere Möbel fachgerecht ab und am Zielort wieder auf. Auch die Montage von neu gekauften Möbeln können wir übernehmen."
-  },
-  {
-    question: "Sind meine Möbel beim Umzug versichert?",
-    answer: "Ja, wir verfügen über eine branchenübliche Transport- und Betriebshaftpflichtversicherung. Ihre Güter sind während des Transports durch uns bestens abgesichert."
-  },
-  {
-    question: "Stellen Sie auch Umzugskartons zur Verfügung?",
-    answer: "Auf Wunsch bringen wir gerne ausreichend professionelle Umzugskartons, Kleiderboxen sowie Verpackungsmaterial (Luftpolsterfolie, Seidenpapier, Klebeband) rechtzeitig vor dem Umzug vorbei."
-  },
-  {
+    category: "Ablauf & Termine",
     question: "Wie lange dauert ein durchschnittlicher Umzug?",
-    answer: "Das lässt sich pauschal schwer sagen. Ein 2-Zimmer-Umzug innerhalb der Stadt ist oft an einem halben Tag erledigt, ein großes Einfamilienhaus kann 1-2 Tage in Anspruch nehmen. Die genaue Dauer planen wir im Vorfeld mit Ihnen."
+    answer:
+      "Eine Zwei-Zimmer-Wohnung innerhalb der Stadt ist meist an einem halben bis ganzen Tag erledigt. Ein Einfamilienhaus braucht oft ein bis zwei Tage. Entscheidend sind weniger die Quadratmeter als Etage, Aufzug und Tragewege – deshalb schätzen wir die Dauer erst nach der Besichtigung verbindlich ein."
   },
   {
-    question: "Übernehmen Sie auch Firmenumzüge?",
-    answer: "Ja, wir sind für Privat- und Gewerbekunden im Einsatz. Büroumzüge organisieren wir so, dass Ihr Geschäftsbetrieb so wenig wie möglich beeinträchtigt wird."
-  },
-  {
+    category: "Ablauf & Termine",
     question: "Muss ich bei der Entrümpelung vor Ort sein?",
-    answer: "Nein, das ist nicht zwingend erforderlich. Nach einer gemeinsamen Vorbesprechung, bei der geklärt wird, was bleiben soll und was entsorgt wird, können wir die Arbeiten völlig autark durchführen. Zur Übergabe treffen wir uns dann im besenreinen Zustand wieder."
+    answer:
+      "Nein. Wir gehen das Objekt vorher gemeinsam durch und halten fest, was bleiben soll und was entsorgt wird. Danach können wir eigenständig arbeiten. Zur Übergabe treffen wir uns wieder, wenn die Räume besenrein sind."
   },
   {
-    question: "Können Sie auch sehr schwere Dinge (Klavier, Tresor) transportieren?",
-    answer: "Wir transportieren auch schwere und sperrige Güter. Bitte geben Sie solche speziellen Gegenstände bei der Anfrage unbedingt an, damit wir das richtige Equipment und ausreichend Personal einplanen können."
+    category: "Preise & Angebot",
+    question: "Bieten Sie Festpreise an?",
+    answer:
+      "Ja. Nach der Besichtigung – vor Ort oder anhand aussagekräftiger Fotos und Videos – erhalten Sie ein schriftliches Festpreisangebot. Was darin steht, gilt. Nachforderungen gibt es nur, wenn Sie selbst den Umfang ändern, etwa wenn zusätzlich der Keller mit raus soll."
+  },
+  {
+    category: "Preise & Angebot",
+    question: "Was bestimmt den Preis eines Umzugs?",
+    answer:
+      "Vor allem vier Dinge: das zu transportierende Volumen, die Etagen und ob es einen Aufzug gibt, die Entfernung zwischen den Adressen sowie die Zusatzleistungen wie Packen, Möbelmontage oder eine Halteverbotszone. Deshalb sind seriöse Pauschalpreise ohne Besichtigung kaum möglich."
+  },
+  {
+    category: "Preise & Angebot",
+    question: "Was kostet eine Entrümpelung?",
+    answer:
+      "Das hängt von der Menge, der Etage, den Tragewegen und den Entsorgungsgebühren ab. Verwertbare Möbel und Gegenstände rechnen wir an – das senkt den Preis spürbar. Die Besichtigung ist kostenlos und unverbindlich, auch wenn Sie sich danach gegen uns entscheiden."
+  },
+  {
+    category: "Preise & Angebot",
+    question: "Kann ich den Umzug steuerlich absetzen?",
+    answer:
+      "In vielen Fällen ja – bei einem beruflich veranlassten Umzug als Werbungskosten, sonst häufig anteilig als haushaltsnahe Dienstleistung. Wir stellen Ihnen dafür eine ordentliche Rechnung aus; bitte begleichen Sie diese per Überweisung, da das Finanzamt einen Zahlungsnachweis verlangt. Die steuerliche Bewertung im Einzelfall klärt Ihr Steuerberater."
+  },
+  {
+    category: "Leistungen",
+    question: "In welchem Gebiet sind Sie tätig?",
+    answer:
+      "Unser Schwerpunkt ist Düsseldorf und das direkte Umland: Neuss, Ratingen, Monheim am Rhein, Langenfeld, Hilden, Mettmann, Erkrath, Leverkusen, Dormagen, Meerbusch und Kaarst. Unsere Geschäftsadresse ist Monheim am Rhein. Fernumzüge innerhalb Deutschlands übernehmen wir auf Anfrage."
+  },
+  {
+    category: "Leistungen",
+    question: "Stellen Sie Umzugskartons und Verpackungsmaterial?",
+    answer:
+      "Ja. Auf Wunsch liefern wir rechtzeitig vor dem Umzugstag Kartons, Kleiderboxen, Luftpolsterfolie, Seidenpapier und Klebeband an. Sagen Sie einfach bei der Besichtigung, wie viel Sie selbst packen möchten – danach richtet sich die Menge."
+  },
+  {
+    category: "Leistungen",
+    question: "Übernehmen Sie auch Firmen- und Büroumzüge?",
+    answer:
+      "Ja. Büroumzüge legen wir so, dass Ihr Betrieb möglichst wenig stillsteht – auf Wunsch abends, am Wochenende oder in Etappen. Arbeitsplätze werden beschriftet und am neuen Standort in der abgesprochenen Ordnung wieder aufgebaut."
+  },
+  {
+    category: "Leistungen",
+    question: "Beantragen Sie auch die Halteverbotszone?",
+    answer:
+      "Ja, auf Wunsch kümmern wir uns um Beantragung und Aufstellung der Halteverbotsschilder an beiden Adressen. Das braucht je nach Stadt etwas Vorlauf, deshalb sprechen Sie uns am besten früh darauf an. Die Amtsgebühren weisen wir transparent im Angebot aus."
+  },
+  {
+    category: "Leistungen",
+    question: "Transportieren Sie auch Klavier, Tresor oder andere schwere Stücke?",
+    answer:
+      "Schwere und sperrige Einzelstücke sind möglich, müssen aber vorher angemeldet werden – wir planen dann zusätzliches Personal und passendes Equipment ein. Bitte geben Sie solche Gegenstände unbedingt schon bei der Anfrage an, sonst fehlt am Umzugstag genau das, was gebraucht wird."
+  },
+  {
+    category: "Sicherheit & Haftung",
+    question: "Sind meine Möbel beim Transport abgesichert?",
+    answer:
+      "Wir verfügen über eine Transport- und Betriebshaftpflichtversicherung. Für Umzüge gilt zusätzlich die gesetzliche Haftung des Spediteurs nach § 451e HGB, die auf einen Betrag je Kubikmeter Laderaum begrenzt ist. Wenn Sie besonders wertvolle Stücke transportieren lassen, sprechen Sie uns vorher an – dann klären wir gemeinsam, ob eine zusätzliche Absicherung sinnvoll ist."
+  },
+  {
+    category: "Sicherheit & Haftung",
+    question: "Was passiert, wenn doch einmal etwas beschädigt wird?",
+    answer:
+      "Melden Sie den Schaden bitte direkt bei der Übergabe oder unverzüglich danach, am besten mit Foto. Äußerlich erkennbare Schäden müssen aus rechtlichen Gründen zeitnah angezeigt werden. Wir nehmen den Fall auf und klären die Regulierung über unsere Versicherung – ohne dass Sie hinterhertelefonieren müssen."
+  },
+  {
+    category: "Sicherheit & Haftung",
+    question: "Wie gehen Sie mit persönlichen Unterlagen und Wertsachen um?",
+    answer:
+      "Bargeld, Schmuck, Ausweise und wichtige Dokumente sollten Sie grundsätzlich selbst transportieren – das ist branchenüblich und in Ihrem Interesse. Bei Haushaltsauflösungen sichern wir gefundene Dokumente und Erinnerungsstücke und übergeben sie Ihnen, statt sie zu entsorgen."
+  },
+  {
+    category: "Sicherheit & Haftung",
+    question: "Wird der Abfall ordnungsgemäß entsorgt?",
+    answer:
+      "Ja. Wir trennen Wertstoffe, Sperrmüll, Elektrogeräte und Problemstoffe und geben sie bei zugelassenen Entsorgungsbetrieben ab. Auf Wunsch erhalten Sie den Entsorgungsnachweis – für Hausverwaltungen und Erbengemeinschaften ist das oft wichtig."
   }
 ];

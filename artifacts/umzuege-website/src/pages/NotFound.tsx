@@ -1,43 +1,61 @@
 import { Link } from 'react-router-dom';
-import { Home, Phone } from 'lucide-react';
+import { Home, Phone, ArrowRight } from 'lucide-react';
 import { SEOHead } from '@/components/SEOHead';
 import { company } from '@/data/company';
+import { services } from '@/data/services';
+import { LostBox } from '@/components/decor/Silhouettes';
 
 export default function NotFound() {
   return (
     <>
-      <SEOHead 
-        title="Seite nicht gefunden (404)" 
-        description="Die gesuchte Seite konnte leider nicht gefunden werden." 
+      <SEOHead
+        title="Seite nicht gefunden (404)"
+        description="Die gesuchte Seite konnte leider nicht gefunden werden."
       />
-      
-      <div className="min-h-[80vh] flex items-center justify-center bg-zinc-50 px-4 py-20">
-        <div className="max-w-xl w-full bg-white p-10 md:p-16 rounded-3xl shadow-2xl text-center border border-zinc-100">
-          <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8">
-            <span className="text-5xl font-black text-primary font-display">404</span>
-          </div>
-          
-          <h1 className="text-3xl font-bold text-zinc-900 mb-4">Uups! Seite nicht gefunden</h1>
-          <p className="text-lg text-zinc-600 mb-10">
-            Die von Ihnen aufgerufene Seite existiert leider nicht oder wurde verschoben.
+
+      <div className="relative overflow-hidden min-h-[75vh] flex items-center bg-background bg-mesh grain px-5 py-20">
+        <LostBox className="pointer-events-none absolute inset-x-0 bottom-0 h-[130px] md:h-[180px] text-tint-sky/20 mask-fade-top" />
+
+        <div className="relative max-w-2xl w-full mx-auto text-center">
+          <p className="font-display text-[6rem] md:text-[8rem] leading-none font-extrabold text-primary/25 select-none">
+            404
           </p>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link 
-              to="/"
-              className="flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-xl shadow-lg hover:bg-[#e5ae06] transition-all"
-            >
-              <Home className="w-5 h-5" />
+
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 -mt-4">
+            Hier ist wohl etwas verrutscht
+          </h1>
+          <p className="lead mb-10 max-w-lg mx-auto">
+            Die Seite gibt es nicht mehr oder sie hat eine neue Adresse bekommen. Der Weg zurück
+            führt über die Startseite – oder direkt zu einer unserer Leistungen.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-3 mb-12">
+            <Link to="/" className="btn-primary">
+              <Home className="w-4 h-4" />
               Zur Startseite
             </Link>
-            
-            <a 
-              href={`tel:${company.phone.replace(/\s/g, '')}`}
-              className="flex items-center justify-center gap-2 px-8 py-4 bg-zinc-900 text-white font-bold rounded-xl shadow-lg hover:bg-zinc-800 transition-all"
-            >
-              <Phone className="w-5 h-5" />
+            <a href={`tel:${company.phone.replace(/\s/g, '')}`} className="btn-outline">
+              <Phone className="w-4 h-4 text-amber-ink" />
               {company.phoneDisplay}
             </a>
+          </div>
+
+          <div className="pt-10 border-t border-card-border">
+            <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground mb-5">
+              Vielleicht suchen Sie das
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {services.filter(s => s.hasDetailPage).map((service) => (
+                <Link
+                  key={service.id}
+                  to={`/leistungen/${service.slug}`}
+                  className="chip hover:border-primary-line hover:text-ink transition-colors"
+                >
+                  {service.title}
+                  <ArrowRight className="w-3.5 h-3.5 opacity-50" />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

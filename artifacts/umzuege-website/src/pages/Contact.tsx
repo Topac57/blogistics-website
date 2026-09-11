@@ -1,108 +1,131 @@
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, CheckCircle2, HandHelping } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SEOHead } from '@/components/SEOHead';
+import { PageHero } from '@/components/PageHero';
+import { ContactScene } from '@/components/decor/Silhouettes';
 import { ContactForm } from '@/components/ContactForm';
 import { company } from '@/data/company';
+import { seoData } from '@/data/seo';
 
 export function Contact() {
+  const contactItems = [
+    {
+      icon: Phone,
+      label: 'Telefon',
+      value: company.phoneDisplay,
+      href: `tel:${company.phone.replace(/\s/g, '')}`,
+      hint: 'Der schnellste Weg – besonders bei kurzfristigen Terminen.'
+    },
+    {
+      icon: Mail,
+      label: 'E-Mail',
+      value: company.email,
+      href: `mailto:${company.email}`,
+      hint: 'Gern mit Fotos der Räume, das beschleunigt die Einschätzung.'
+    },
+    {
+      icon: MapPin,
+      label: 'Geschäftsadresse',
+      value: `${company.address.street}, ${company.address.city}`,
+      hint: 'Kein Ladenlokal – wir kommen zu Ihnen.'
+    },
+    {
+      icon: Clock,
+      label: 'Telefonisch erreichbar',
+      value: company.workingHours,
+      hint: 'Außerhalb der Zeiten: Formular nutzen, wir melden uns zurück.'
+    }
+  ];
+
   return (
     <>
-      <SEOHead 
-        title="Kontakt & Anfrage" 
-        description="Nehmen Sie Kontakt auf! Kostenlose Besichtigung und unverbindliches Angebot für Umzüge und Transporte in Düsseldorf und Umgebung."
-        path="/kontakt"
+      <SEOHead
+        title={seoData.pages.kontakt.title}
+        description={seoData.pages.kontakt.description}
+        path={seoData.pages.kontakt.path}
       />
 
-      <section className="bg-zinc-950 py-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Nehmen Sie <span className="text-primary">Kontakt</span> auf
-            </h1>
-            <p className="text-xl text-zinc-300 max-w-2xl mx-auto">
-              Wir freuen uns auf Ihre Anfrage. Schnelle Antworten und unkomplizierte Kommunikation garantiert.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Kontakt"
+        title={<>Sagen Sie uns, was <span className="relative inline-block"><span className="relative z-10">ansteht</span><span className="absolute left-0 right-0 bottom-1 h-3 md:h-4 bg-primary/45 -rotate-[0.5deg] rounded-sm z-0" /></span></>}
+        lead="Ein paar Angaben genügen für den ersten Schritt. Wir melden uns in der Regel am selben Werktag mit einem Terminvorschlag für die kostenlose Besichtigung."
+        decor={ContactScene}
+      />
 
-      <section className="py-24 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
-            {/* Contact Info */}
-            <motion.div 
-              initial={{ opacity: 0, x: -20 }} 
-              animate={{ opacity: 1, x: 0 }} 
-              className="lg:col-span-4 space-y-8"
+      <section className="section relative overflow-hidden bg-background bg-mesh-soft">
+        <div className="shell">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+
+            {/* Kontaktdaten */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="lg:col-span-5 space-y-8"
             >
+              <div className="space-y-3">
+                {contactItems.map((item) => {
+                  const Wrapper = item.href ? 'a' : 'div';
+                  return (
+                    <Wrapper
+                      key={item.label}
+                      {...(item.href ? { href: item.href } : {})}
+                      className={`card-soft flex items-start gap-4 p-5 ${
+                        item.href ? 'hover:border-primary-line transition-colors' : ''
+                      }`}
+                    >
+                      <div className="w-11 h-11 rounded-xl bg-primary-soft border border-primary-line flex items-center justify-center shrink-0">
+                        <item.icon className="w-5 h-5 text-amber-ink" />
+                      </div>
+                      <div className="min-w-0">
+                        <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">
+                          {item.label}
+                        </p>
+                        <p className="font-semibold text-ink break-words">{item.value}</p>
+                        <p className="text-[13px] text-muted-foreground mt-1 leading-snug">
+                          {item.hint}
+                        </p>
+                      </div>
+                    </Wrapper>
+                  );
+                })}
+              </div>
+
+              <div className="rounded-2xl border border-primary-line bg-primary-soft p-6">
+                <div className="flex items-center gap-2.5 mb-3">
+                  <HandHelping className="w-5 h-5 text-amber-ink" />
+                  <h2 className="font-bold text-ink">Nur Tragehilfe gesucht?</h2>
+                </div>
+                <p className="text-[15px] text-ink-soft leading-relaxed">
+                  Wenn Sie lediglich kräftige Hände zum Umstellen, Tragen oder Umräumen
+                  brauchen, wählen Sie im Formular „Tragearbeiten“. Das ist stundenweise
+                  buchbar und braucht keine Besichtigung.
+                </p>
+              </div>
+
               <div>
-                <h2 className="text-2xl font-bold text-zinc-900 mb-6">Unsere Kontaktdaten</h2>
-                <p className="text-zinc-600 mb-8 leading-relaxed">
-                  Sie haben Fragen zu unseren Leistungen oder benötigen kurzfristig Hilfe (z.B. bei Tragearbeiten)? Melden Sie sich gerne direkt bei uns.
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 border border-zinc-100">
-                    <MapPin className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-zinc-900 text-lg">Adresse</h3>
-                    <p className="text-zinc-600">{company.address.street}</p>
-                    <p className="text-zinc-600">{company.address.city}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 border border-zinc-100">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-zinc-900 text-lg">Telefon</h3>
-                    <a href={`tel:${company.phone.replace(/\s/g, '')}`} className="text-zinc-600 hover:text-primary font-medium transition-colors">
-                      {company.phoneDisplay}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 border border-zinc-100">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-zinc-900 text-lg">E-Mail</h3>
-                    <a href={`mailto:${company.email}`} className="text-zinc-600 hover:text-primary transition-colors">
-                      {company.email}
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0 border border-zinc-100">
-                    <Clock className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-zinc-900 text-lg">Erreichbarkeit</h3>
-                    <p className="text-zinc-600">{company.workingHours}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-6 bg-primary/10 rounded-2xl border border-primary/20 mt-8">
-                <h4 className="font-bold text-zinc-900 mb-2">Tragearbeiten gesucht?</h4>
-                <p className="text-zinc-700 text-sm">
-                  Wenn Sie nur starke Helfer für internes Umräumen oder Tragen schwerer Güter benötigen, wählen Sie im Formular einfach "Tragearbeiten" aus.
-                </p>
+                <h2 className="font-bold text-ink mb-4">Was danach passiert</h2>
+                <ol className="space-y-3">
+                  {[
+                    'Wir melden uns in der Regel am selben Werktag zurück.',
+                    'Gemeinsamer Besichtigungstermin – vor Ort oder per Video.',
+                    'Schriftliches Festpreisangebot, unverbindlich.',
+                    'Erst bei Ihrer Zusage reservieren wir Team und Fahrzeug.'
+                  ].map((step, i) => (
+                    <li key={i} className="flex items-start gap-3 text-[15px] text-muted-foreground">
+                      <CheckCircle2 className="w-[18px] h-[18px] text-amber-ink shrink-0 mt-0.5" />
+                      {step}
+                    </li>
+                  ))}
+                </ol>
               </div>
             </motion.div>
 
-            {/* Form */}
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }} 
-              animate={{ opacity: 1, x: 0 }} 
-              className="lg:col-span-8"
+            {/* Formular */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              className="lg:col-span-7"
             >
               <ContactForm />
             </motion.div>

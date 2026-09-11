@@ -3,36 +3,36 @@ export const seoData = {
   siteUrl: "https://www.blogistics.online",
   defaultTitle: "Umzüge & Transporte Düsseldorf | B Logistics",
   defaultDescription:
-    "Zuverlässige Umzüge, Entrümpelungen & Transporte in Düsseldorf und Umgebung. Professionell, pünktlich und zu fairen Preisen. Jetzt kostenlos anfragen!",
+    "Umzüge, Entrümpelungen und Transporte in Düsseldorf und Umgebung. Kostenlose Besichtigung, schriftlicher Festpreis, besenreine Übergabe. Jetzt unverbindlich anfragen.",
   pages: {
     home: {
       title: "Umzüge & Transporte in Düsseldorf und Umgebung",
       description:
-        "Zuverlässige Umzüge, Entrümpelungen & Transporte in Düsseldorf und Umgebung. Professionell, pünktlich und zu fairen Preisen. Jetzt anfragen!",
+        "Umzug, Entrümpelung oder Transport im Raum Düsseldorf? Kostenlose Besichtigung, schriftlicher Festpreis und ein eingespieltes Team. Rückmeldung meist am selben Werktag.",
       path: "/",
     },
     leistungen: {
-      title: "Unsere Leistungen – Umzug, Transport & Entrümpelung in Düsseldorf",
+      title: "Leistungen – Umzug, Entrümpelung, Transport & Montage",
       description:
-        "Vom Umzug über Entrümpelung bis zur Möbelmontage – alle Leistungen von B Logistics für Düsseldorf und die umliegenden Städte.",
+        "Alle Leistungen von B Logistics im Überblick: Privat- und Firmenumzüge, Entrümpelung, Haushaltsauflösung, Transporte, Möbelmontage und Tragearbeiten in Düsseldorf und Umgebung.",
       path: "/leistungen",
     },
     kontakt: {
-      title: "Kontakt & kostenlose Anfrage Düsseldorf",
+      title: "Kontakt & kostenlose Anfrage",
       description:
-        "Nehmen Sie jetzt Kontakt mit B Logistics auf! Kostenlose und unverbindliche Angebote für Umzug, Transport und Entrümpelung in Düsseldorf und Umgebung.",
+        "Anfrage in zwei Minuten: Beschreiben Sie kurz Ihr Vorhaben, wir melden uns in der Regel am selben Werktag mit einem Terminvorschlag für die kostenlose Besichtigung.",
       path: "/kontakt",
     },
     faq: {
-      title: "Häufige Fragen (FAQ) zu Umzug & Entrümpelung",
+      title: "Häufige Fragen zu Umzug, Entrümpelung & Kosten",
       description:
-        "Antworten auf die wichtigsten Fragen zu Umzug, Entrümpelung, Transport und Kosten – B Logistics, Ihr Partner im Raum Düsseldorf.",
+        "Was kostet ein Umzug, wie viel Vorlauf braucht es, wie ist gehaftet? Die wichtigsten Fragen rund um Umzug, Entrümpelung und Transport – klar beantwortet.",
       path: "/faq",
     },
     ueberUns: {
-      title: "Über uns – Ihr Umzugsspezialist für Düsseldorf und Umgebung",
+      title: "Über uns – Ihr Umzugsunternehmen für den Raum Düsseldorf",
       description:
-        "Lernen Sie B Logistics kennen. Geschäftsadresse in Monheim am Rhein, Einsatzgebiet im Raum Düsseldorf und umliegenden Städten.",
+        "B Logistics aus Monheim am Rhein: ein kleiner, fester Betrieb für Umzüge, Entrümpelungen und Transporte in Düsseldorf und dem Rheinland. Lernen Sie uns kennen.",
       path: "/ueber-uns",
     },
     impressum: {

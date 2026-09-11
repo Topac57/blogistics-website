@@ -16,7 +16,7 @@ export function Layout() {
     <div className="flex flex-col min-h-screen">
       <ScrollToTop />
       <Header />
-      <main className="flex-grow pt-[88px]">
+      <main className="flex-grow pt-20">
         <Outlet />
       </main>
       <Footer />
