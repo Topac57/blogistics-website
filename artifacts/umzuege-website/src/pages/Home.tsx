@@ -11,6 +11,7 @@ import { services } from '@/data/services';
 import { company } from '@/data/company';
 import { faqs } from '@/data/faq';
 import { seoData } from '@/data/seo';
+import logo from '@/assets/logo.png';
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -369,22 +370,39 @@ export function Home() {
               </div>
             </motion.div>
 
+            {/* Inhaber-Panel statt Stockfoto – ein echtes Bild vom Team wäre hier
+                die beste Ergänzung, ein beliebiges Symbolbild hilft niemandem */}
             <motion.div {...fadeUp} className="relative">
               <div className="absolute -inset-3 bg-tint-sky/10 rounded-[2rem] -rotate-[1deg]" aria-hidden="true" />
-              <img
-                src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=900&q=80"
-                alt="Zwei Mitarbeiter tragen gemeinsam einen Umzugskarton"
-                className="relative rounded-[1.75rem] object-cover h-[420px] lg:h-[520px] w-full shadow-[0_40px_80px_-45px_rgba(60,45,10,0.5)]"
-              />
-              <div className="mt-5 lg:mt-0 lg:absolute lg:-bottom-8 lg:-left-8 lg:max-w-sm card-soft p-7 shadow-[0_24px_60px_-35px_rgba(60,45,10,0.5)]">
-                <Quote className="w-7 h-7 text-primary mb-3" />
-                <p className="text-ink font-medium leading-relaxed">
-                  Eine Ansprechperson vom ersten Anruf bis zur Schlüsselübergabe – das ist
-                  kein Versprechen, sondern schlicht die Größe unseres Betriebs.
-                </p>
-                <p className="text-sm text-muted-foreground mt-4">
-                  {company.owner}, Inhaber
-                </p>
+              <div className="relative card-soft p-8 md:p-11 shadow-[0_34px_80px_-50px_rgba(60,45,10,0.55)] overflow-hidden">
+                <div className="absolute inset-0 bg-mesh-warm opacity-80 pointer-events-none" aria-hidden="true" />
+                <div className="relative">
+                  <div className="w-20 h-20 rounded-2xl bg-background border border-card-border flex items-center justify-center mb-8">
+                    <img src={logo} alt="B Logistics" className="w-full h-full object-contain p-2" />
+                  </div>
+
+                  <Quote className="w-9 h-9 text-primary mb-5" />
+                  <blockquote className="text-xl md:text-2xl font-display font-semibold text-ink leading-snug mb-6">
+                    Eine Ansprechperson vom ersten Anruf bis zur Schlüsselübergabe – das ist
+                    kein Versprechen, sondern schlicht die Größe unseres Betriebs.
+                  </blockquote>
+                  <p className="text-[15px] text-muted-foreground">
+                    <span className="font-semibold text-ink">{company.owner}</span> · Inhaber
+                  </p>
+
+                  <div className="mt-8 pt-7 border-t border-card-border">
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Fragen vorab? Rufen Sie einfach an – Sie landen direkt richtig.
+                    </p>
+                    <a
+                      href={`tel:${company.phone.replace(/\s/g, '')}`}
+                      className="btn-outline w-full sm:w-auto"
+                    >
+                      <Phone className="w-4 h-4 text-amber-ink" />
+                      {company.phoneDisplay}
+                    </a>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
